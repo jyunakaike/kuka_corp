@@ -1,8 +1,14 @@
-import React from 'react'
+import React from 'react';
+
+// components
+import { Nav } from './Nav'
+
 
 const App = () => {
   return (
-    <div>Hello world</div>
+    <React.Fragment>
+      <Nav  />
+    </React.Fragment>
   )
 }
 
