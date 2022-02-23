@@ -5,7 +5,8 @@ import { Nav } from './Nav';
 import { Introduction } from './Introduction';
 import { MVC } from './MVC';
 import { Beneficios } from './Beneficios';
-import {Mapa} from './Mapa';
+import { Mapa } from './Mapa';
+import { FAQS } from './FAQS';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <MVC />
       <Beneficios />
       <Mapa />
+      <FAQS />
 
     </React.Fragment>
   )
