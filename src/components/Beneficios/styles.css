@@ -1,0 +1,21 @@
+.Benenficios-container{
+    position: relative;
+    background-color: blueviolet;
+    width: 100%;
+    height: auto;
+}
+
+.Benenficios-imagen{
+    width: 100%;
+    height: 100%;
+}
+
+.Benenficios-flechaLeft{
+    position: absolute;
+    left: 203px;
+    top: 399px;
+    width: 74px;
+    height: 78px;
+    background-color: blueviolet;
+
+}
