@@ -13,9 +13,9 @@
 .MVC-container-background span{
     position: absolute;
     left : calc(50% - 100px);
-    background-color: red;
+    background-color: blue;
     width: 100px;
-    height: 100px
+    height: 50px;
 }
 
 .MVC-cards-container{
