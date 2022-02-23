@@ -1,0 +1,85 @@
+.Introduction-image{
+    width: 100%;
+    height: 40vh;
+}
+.Introduction-detail{
+    background-color:white;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+
+.Introduction-cards-container{
+    width: 80%;
+    background-color: aqua;
+    /* height: 40vh; */
+    height: auto;
+    padding: 2.5% 10%;
+
+    display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        place-items: center;
+        gap: 10px;
+    
+}
+.Introduction-card{
+    width: 100%;
+    min-width: 10%;
+    
+    height: auto;
+
+    
+    max-height: 260px;
+
+    border-radius: 15px;
+    padding:20px 20px ;
+    background-color: green;
+    display:flex;
+        flex-direction: column;
+        align-items: center;
+    overflow: hidden;
+}
+
+.Introduction-detail-container{
+    width: 80%;
+    padding: 2.5% 10%;
+    /* padding: 0 0% 0 15%; */
+    background-color: bisque;
+    
+    display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        place-items: center;
+        gap: 10px;
+    
+    /* display:flex; */
+        /* justify-content: center; */
+        /* align-items:flex-start; */
+}
+.Introduction-detail-title{
+    width: 100%;
+    min-width: 20%;
+    height: 150px;
+    background-color:red;
+
+    display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+    overflow: hidden;
+}
+
+.Introduction-detail-information{
+    width: 100%;
+    min-width: 20%;
+    height: 150px;
+    margin: 0 20px ;
+    background-color:red;
+
+    display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+    overflow: hidden;
+
+}
+
