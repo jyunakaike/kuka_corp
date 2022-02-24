@@ -33,20 +33,6 @@ export const FAQS = () => {
           arrays.map( (array)=> 
             <GridFAQS key={array.key} length= {array} ></GridFAQS>
           )
-          // <React.Fragment>
-          //   <div className='FAQS-grid'>grid1</div>
-          //   <div className='FAQS-grid'>grid2</div>
-          //   <div className='FAQS-grid'>grid3</div>
-          //   <div className='FAQS-grid'>grid4</div>
-          //   <div className='FAQS-grid'>grid5</div>
-          //   <div className='FAQS-grid'>grid6</div>
-          //   <div className='FAQS-grid'>grid7</div>
-          //   <div className='FAQS-grid'>grid8</div>
-          //   <div className='FAQS-grid'>grid9</div>
-          //   <div className='FAQS-grid'>grid10</div>
-          //   <div className='FAQS-grid'>grid11</div>
-          //   <div className='FAQS-grid'>grid12</div>
-          // </React.Fragment>
         }
       </div>
       <div className='FAQS-pagination'>

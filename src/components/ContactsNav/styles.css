@@ -1,0 +1,16 @@
+.ContactsNav{
+    position: fixed;
+    /* padding-top: 10%; */
+    width: 80px;
+    height: 100%;
+    
+    display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    z-index: 5;
+}
+
+.ContactsNav p {
+    margin-bottom: 50px;
+}

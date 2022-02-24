@@ -7,18 +7,21 @@ import { MVC } from './MVC';
 import { Beneficios } from './Beneficios';
 import { Mapa } from './Mapa';
 import { FAQS } from './FAQS';
+import { ContactsNav } from './ContactsNav';
 
 const App = () => {
   return (
-    <React.Fragment>
-      <Nav />
-      <Introduction />
-      <MVC />
-      <Beneficios />
-      <Mapa />
-      <FAQS />
 
+    <React.Fragment>
+        <Nav />
+        <ContactsNav />
+        <Introduction />
+        <MVC />
+        <Beneficios />
+        <Mapa />
+        <FAQS />
     </React.Fragment>
+
   )
 }
 

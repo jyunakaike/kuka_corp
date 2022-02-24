@@ -12,7 +12,7 @@ export const GridFAQS = ({ length }) => {
     }
     return (
         <React.Fragment>
-            <div onMouseOver={MouseIn} onMouseOut={MouseOut} className='FAQS-grid'>
+            <div key={length} onMouseOver={MouseIn} onMouseOut={MouseOut} className='FAQS-grid'>
                 {(hover)? <p> Respuesta {length} </p>  : <p> Pregunta {length}</p>}
             </div>
         </React.Fragment>
