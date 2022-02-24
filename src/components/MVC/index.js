@@ -55,11 +55,11 @@ export const MVC = () => {
                         <div className='MVC-detail-title'>
                             <h2> Qué es</h2>
                             <p> KUKA ES UN SUPLEMENTO NUTRICIONAL A BASE DE EXTRACTO DE HOJA DE COCA ORGÁNICA</p>
-                            <h2> INGREDIENTES</h2>
+                            <h2> Ingredientes</h2>
                             <p> EXTRACTO DE HOJA DE COCA ORGANICA</p>
                         </div>
                         <div className='MVC-detail-title'>
-                            <h2> INFORMACIÓN NUTRICIONAL</h2>
+                            <h2> Información Nutricional</h2>
                             <p>aqui hay informacion del adicional </p>
                         </div>
                     </React.Fragment>
