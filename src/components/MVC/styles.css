@@ -1,3 +1,14 @@
+@keyframes fadeIn {
+    from {
+        filter: blur(5px);
+        opacity: 0;
+    }
+    to{
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
 .MVC-container-background{
     position: relative;
     width: 100%;
@@ -42,7 +53,11 @@
         flex-direction: column;
         align-items: center;
     overflow: hidden;
+    animation-duration: 2s;
+    animation-name: fadeIn;
 }
+
+
 
 .MVC-detail-container{
     width: 80%;
@@ -72,8 +87,10 @@
         flex-direction: column;
         align-items: flex-start;
     overflow: hidden;
+    animation-duration: 2s;
+    animation-name: fadeIn;
 }
-
+/* 
 .MVC-detail-information{
     width: 100%;
     min-width: 20%;
@@ -85,6 +102,8 @@
         flex-direction: column;
         align-items: flex-start;
     overflow: hidden;
+    animation-duration: 2s;
+    animation-name: fadeIn;
 
-}
+} */
 

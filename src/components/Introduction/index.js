@@ -14,7 +14,7 @@ export const Introduction = () => {
             {/* parallax clavado */}
             {/* <img className='Introduction-image' style={{backgroundImage:`url(${bg})` }} /> */}
 
-            <Parallax className='Introduction-image' bgImage={bg} bgImageAlt="bg" strength={-150}>
+            <Parallax className='Introduction-image' bgImage={bg} bgImageAlt="bg" strength={-120}>
 
             </Parallax>
 
