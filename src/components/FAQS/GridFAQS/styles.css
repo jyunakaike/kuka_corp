@@ -30,6 +30,6 @@
     display: flex;
         justify-content: center;
         align-items: center;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-name: fadeIn ;
 }

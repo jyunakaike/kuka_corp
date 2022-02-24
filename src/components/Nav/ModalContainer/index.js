@@ -12,8 +12,6 @@ export const ModalContainer = ({ setOpenModal }) => {
         document.body.style.overflow = 'unset';
         setOpenModal(false)
     }
-
-
     return (
         <React.Fragment>
             <div className='ModalContainer-overlay' >
