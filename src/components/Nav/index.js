@@ -12,10 +12,6 @@ export const Nav = () => {
   const openModalQR = () => {
     setOpenModal(true)
   }
-
-
-
-
   return (
     <header >
       <h1>Kuka</h1>

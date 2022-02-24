@@ -6,4 +6,17 @@
 .Introduction-image{
     width: 100%;
     height: 100%;
+
+
+    /* parallax clavado */
+    /* position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover ; */
+
+    /* parallax bg */
+    position: relative;
+    
+
 }
