@@ -75,11 +75,11 @@ export const Carousel = () => {
         });
 
         // resume 
-        // slideshow.current.addEventListener('mouseleave', () => {
-        //     intervaloslideshow.current = setInterval(() => {
-        //         next();
-        //     }, 5000);
-        // });
+        slideshow.current.addEventListener('mouseleave', () => {
+            intervaloslideshow.current = setInterval(() => {
+                next();
+            }, 5000);
+        });
     }, [])
 
     return (

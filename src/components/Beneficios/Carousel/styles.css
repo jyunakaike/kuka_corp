@@ -55,17 +55,19 @@
 } */
 
 .Carousel-controles{
-    border: none;
-    
-
+    /* border: none; */
 }
+
+.Carousel-controles:hover{
+}
+
 
 .Carousel-arrow{
     width: 100px;
     height: 100px;
     color: green;
-
 }
+
 
 
 .Carousel-controles-izquierda{
@@ -75,6 +77,10 @@
     border: none;
     background-color: transparent;
     width: 100px;
+    display: grid;
+        place-items: center;
+    border-radius: 50%;
+
 }
 
 .Carousel-controles-derecha{
@@ -84,6 +90,17 @@
     border: none;
     background-color: transparent;
     width: 100px;
+    border-radius: 50%;
+    display: grid;
+        place-items: center;
+    border-radius: 50%;
 }
+
+.Carousel-controles-derecha:hover,
+.Carousel-controles-izquierda:hover{
+    background-color: white;
+    opacity: 0.5;
+}
+
 
  
