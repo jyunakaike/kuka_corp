@@ -4,10 +4,10 @@ import { Parallax, Background } from 'react-parallax';
 
 
 
-import bg from '../../../assets/image/bg.jpg'
+import bg from '../../../assets/image/IntroBackground.png'
 
 
-const image2 = "https://images.unsplash.com/photo-1498092651296-641e88c3b057?auto=format&fit=crop&w=1778&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"
+
 
 export const Introduction = () => {
     return (
