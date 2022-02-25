@@ -25,6 +25,10 @@ li{
 
 }
 
+.KukaIntro{
+    position: relative;
+}
+
 
 @media (max-width: 760px) {
     ul{

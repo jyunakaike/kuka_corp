@@ -5,18 +5,25 @@ import { ModalContainer } from './ModalContainer';
 
 import './styles.css'
 import { KukakorpMenu } from './KukakorpMenu';
+import { KukaIntro} from './KukaIntro';
+
 
 export const Nav = () => {
   // for modal
   const [openModal, setOpenModal] = useState(false);
-  const [openMenu, setOpenMenu] = useState(false);
+  const [openMenukukacorp, setOpenMenukukacorp] = useState(false);
+  const [openMenuIntro, setOpenMenuIntro] = useState(false);
 
   const openModalQR = () => {
     setOpenModal(true)
   }
 
   const kukacorpClick = () => {
-    setOpenMenu(!openMenu)
+    setOpenMenukukacorp(!openMenukukacorp)
+  }
+
+  const kukaintroClick = () => {
+    setOpenMenuIntro(!openMenuIntro)
   }
 
   return (
@@ -27,12 +34,21 @@ export const Nav = () => {
           <div className='Kukakcorp'>
             <li onClick={kukacorpClick}>
               KUKACORP
-            </li> {
-              (openMenu) &&
+            </li> 
+            {
+              (openMenukukacorp) &&
               <KukakorpMenu />
             }
           </div>
-          <li>KUKA INTRO</li>
+
+          <div className='KukaIntro'>
+            <li onClick={kukaintroClick}>KUKA INTRO</li>
+            {
+              (openMenuIntro) &&
+              <KukaIntro />
+            }
+          </div>
+          
           <li>FAQS</li>
           <li>PUNTOS DE VENTA</li>
           <li onClick={openModalQR} >WHATSAPP</li>
