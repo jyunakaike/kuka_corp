@@ -1,9 +1,60 @@
 .Mapa-container{
+    position: relative;
     width: 100%;
     height: 100vh;
-    background-color: aquamarine;
+    background-color: white;
+}
+.Mapa-title{
+    position: absolute;
+    top:10%;
+    left: 20%;
 }
 .Mapa-img{
     width: 100%;
     height: 100%;
 }
+
+.Mapa-localization{
+    position: absolute;
+    width: 4%;
+    height: 9%;
+}
+
+.iconLocalization1{
+    top:30%;
+    right: 44.89%;
+}
+.iconLocalization2{
+    top:39.7%;
+    right: 28.5%;
+}
+.iconLocalization3{
+    top:60.5%;
+    right: 34%;
+}
+.iconLocalization4{
+    top:64%;
+    left: 34.7%;
+}
+.iconLocalization5{
+    top:40.8%;
+    left: 38.6%;
+}
+.iconLocalization6{
+    top:25.8%;
+    left: 30.6%;
+}
+
+.iconLocalization1:hover,
+.iconLocalization2:hover,
+.iconLocalization3:hover,
+.iconLocalization4:hover,
+.iconLocalization5:hover,
+.iconLocalization6:hover,
+.iconLocalization7:hover{
+    background-color: black;
+    border-radius: 15px;
+    z-index: 2;
+    opacity: 0.5;
+}
+
