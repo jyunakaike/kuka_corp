@@ -58,3 +58,97 @@
     opacity: 0.5;
 }
 
+
+.Mapa-detail{
+    border-radius: 15px;
+    padding: 10px;
+    background-color: white;
+}
+
+
+
+
+
+
+
+.Mapa-detail-localization1{
+    border-radius: 15px;
+    padding: 10px;
+    background-color: white;
+
+    position: absolute;
+    top:15%;
+    right: 19%;
+    border: solid blue ;
+    /* opacity: 0; */
+}
+
+.Mapa-detail-localization2{
+
+    border-radius: 15px;
+    padding: 10px;
+    background-color: white;
+
+    position: absolute;
+    top:36%;
+    right: 2%;
+    border: solid blue ;
+    /* opacity: 0; */
+}
+
+.Mapa-detail-localization3{
+    border-radius: 15px;
+    padding: 10px;
+    background-color: white;
+
+    position: absolute;
+    top:68%;
+    right: 5%;
+    border: solid blue ;
+    /* opacity: 0; */
+}
+.Mapa-detail-localization4{
+    border-radius: 15px;
+    padding: 10px;
+    background-color: white;
+
+    position: absolute;
+    top:60%;
+    left: 8%;
+    border: solid red ;
+    /* opacity: 0; */
+}
+
+.Mapa-detail-localization5{
+
+    border-radius: 15px;
+    padding: 10px;
+    background-color: white;
+
+    position: absolute;
+    top:36%;
+    left: 10%;
+    border: solid orange ;
+    /* opacity: 0; */
+}
+
+.Mapa-detail-localization6{
+    border-radius: 15px;
+    padding: 10px;
+    background-color: white;
+
+    position: absolute;
+    top:15%;
+    left: 5%;
+    border: solid red ;
+    /* opacity: 0; */
+}
+
+.Mapa-detail-localization1:hover,
+.Mapa-detail-localization2:hover,
+.Mapa-detail-localization3:hover,
+.Mapa-detail-localization4:hover,
+.Mapa-detail-localization5:hover
+{
+    opacity:1;
+}
