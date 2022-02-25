@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 
 import { ModalContainer } from './ModalContainer';
-
-
 import './styles.css'
+
 import { KukakorpMenu } from './KukakorpMenu';
 import { KukaIntro} from './KukaIntro';
 
+import Logo from '../../../assets/logos/headerLogo.png'
 
 export const Nav = () => {
   // for modal
@@ -29,7 +29,8 @@ export const Nav = () => {
   return (
     <React.Fragment>
       <header >
-        <h1>Kuka</h1>
+        <img src={Logo}></img>
+        
         <ul>
           <div className='Kukakcorp'>
             <li onClick={kukacorpClick}>
