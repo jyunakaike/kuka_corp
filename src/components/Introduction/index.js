@@ -4,6 +4,8 @@ import { Parallax, Background } from 'react-parallax';
 
 
 
+
+import paper from '../../../assets/image/headerBg.png'
 import bg from '../../../assets/image/IntroBackground.png'
 
 
@@ -11,13 +13,21 @@ import bg from '../../../assets/image/IntroBackground.png'
 
 export const Introduction = () => {
     return (
+        <React.Fragment>
+            
+            <Parallax bgImageStyle={{ height: '100%', width: '100%', minWidth: '1000px' }} className='Introduction-container' bgImage={bg} strength={150}>
+                <div className='Introduction-image' > </div>
+            </Parallax>
+            
+        </React.Fragment>
+
+
+            // {/* <div>aola</div> */}
         // <Parallax bgImageStyle={{height: '100%', width: '100%', minWidth:'1000px'}}  className='Introduction-container' bgImage={image2} strength={150}>
         // </Parallax>
-        <Parallax bgImageStyle={{height: '110%', width: '100%', minWidth:'1000px'}}  className='Introduction-container' bgImage={bg} strength={150}>
-            {/* <div>aola</div> */}
-        </Parallax>
 
-// , maxWidth: '75px', opacity: '.5'
+
+        // , maxWidth: '75px', opacity: '.5'
 
         // </Parallax>
         // <section className='Introduction-container'>

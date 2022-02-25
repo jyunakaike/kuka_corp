@@ -2,12 +2,29 @@
 
 .Introduction-container{
     width: 100%;
-    height: 85vh;
+    /* height: 85vh; */
+    height: 99vh;
     /* min-height: 1700px; */
     position: relative;
 }
 
-/* .Introduction-image{ */
+.Introduction-image{
+    position: absolute;
+    bottom: -857px;
+    width: 100%;
+    height: 251px;
+    background-image: url("../../../assets/image/topPaper.png") ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    clip-path: polygon(70% 91%, 100% 0, 100% 116%, 82% 124%, 0 126%, 0 0);
+    background-color: white;
+    z-index: 2;
+}
+
+/*
+    .Introduction-image{ */
     /* width: 100%;
     height: 100%; */
 
