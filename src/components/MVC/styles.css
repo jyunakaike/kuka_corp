@@ -24,7 +24,7 @@
 .MVC-container-background span{
     position: absolute;
     left : calc(50% - 100px);
-    background-color: blue;
+    /* background-color: blue; */
     width: 100px;
     height: 50px;
 }
@@ -33,9 +33,9 @@
     width: 80%;
     /* background-color: aqua; */
     /* height: 40vh; */
-    height: 60vh;
+    height: 50vh;
     margin: 0 auto;
-    padding: 7% 10% 2% 10%;
+    padding: 7% 10% 0 10%;
 
     display: grid;
         grid-template-columns: 1fr 1fr 1fr ;
@@ -57,6 +57,11 @@
     overflow: hidden;
     animation-duration: 2s;
     animation-name: fadeIn;
+}
+
+.MVC-card h2, .MVC-card img, .MVC-card p{
+    margin: 10px;
+
 }
 
 
@@ -94,6 +99,20 @@
 }
 .MVC-detail-title h2, p{
     margin-bottom: 10px;
+}
+
+.MVC-hand{
+    position:absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+@media (max-width: 1000px) {
+    .MVC-hand{
+        display: none;
+    }
+    
 }
 
 

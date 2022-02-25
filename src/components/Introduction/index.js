@@ -2,18 +2,12 @@ import React from 'react'
 import './styles.css'
 import { Parallax, Background } from 'react-parallax';
 
-
-
-
 import paper from '../../../assets/image/headerBg.png'
 import bg from '../../../assets/image/IntroBackground.png'
 
-
-
-
 export const Introduction = () => {
     return (
-        <div classname="Introduction-allContainer">
+        <div className="Introduction-allContainer">
             
             <Parallax bgImageStyle={{ height: '100%', width: '100%', minWidth: '1000px' }} className='Introduction-container' bgImage={bg} strength={150}>
                 

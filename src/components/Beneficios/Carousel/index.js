@@ -1,9 +1,9 @@
 import React, { useRef, useEffect } from 'react'
 import './styles.css'
 
-import img1 from '../../../../assets/image/beneficio1.jpg'
-import img2 from '../../../../assets/image/beneficio2.jpg'
-import img3 from '../../../../assets/image/beneficio3.jpg'
+import img1 from '../../../../assets/image/beneficio1.png'
+import img2 from '../../../../assets/image/beneficio2.png'
+import img3 from '../../../../assets/image/beneficio3.png'
 
 
 export const Carousel = () => {
