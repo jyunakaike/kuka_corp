@@ -1,6 +1,10 @@
 import React, { useEffect } from 'react'
 import './styles.css'
 
+import {IoMdCloseCircle} from 'react-icons/io';
+
+import Qr from '../../../../assets/image/Qr.png'
+
 export const ModalContainer = ({ setOpenModal }) => {
 
     useEffect(() => {
@@ -17,11 +21,13 @@ export const ModalContainer = ({ setOpenModal }) => {
             <div className='ModalContainer-overlay' >
                 <div className='ModalContainer-overlay-container '>
                     <div className='ModalContainer-right'>
-                        <div className='ModalContainer-Close' onClick={closeModal} > X </div>
+                        <div className='ModalContainer-Close' onClick={closeModal} > <IoMdCloseCircle  /> </div>
                     </div>
-                    <div className='ModalContainer-element'>Aqui viene el QR</div>
+                    <div className='ModalContainer-element'>
+                        <h2>CHAT WHATSAPP</h2>
+                        <img src={Qr}></img>
+                    </div>
                 </div>
-
             </div>
         </React.Fragment>
     )
