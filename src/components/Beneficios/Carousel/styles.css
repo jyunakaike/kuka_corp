@@ -1,26 +1,60 @@
 .Carousel-container{
     width: 100%;
     height: 100%;
-    background-color: aqua;
+    /* background-color: aqua; */
     overflow: hidden;
     
 }
 
 .Carousel-slide{
     width: 100%;
+    /* height: 1500px; */
     /* background-color: black; */
-    /* overflow: hidden; */
     display: flex;
     flex-wrap: nowrap;
     position: relative;
 }
+
 .Carousel-slide img{
     width: 100%;
-    height: 100vh;
+    min-width: 100%;
+    height: 100%;
+    
 }
-/* .Carousel-controles{
 
+
+/* for parallax */
+/* .Carousel-img1{
+    width: 100%;
+    min-width: 100%;
+    height: 100%;
+    background-image: url('../../../../assets/image/beneficio1.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover ; 
+}
+.Carousel-img2{
+    width: 100%;
+    min-width: 100%;
+    height: 100%;
+    background-image: url('../../../../assets/image/beneficio2.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover ; 
+}
+.Carousel-img3{
+    width: 100%;
+    min-width: 100%;
+    height: 100%;
+    background-image: url('../../../../assets/image/beneficio3.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover ; 
 } */
+
 
 .Carousel-controles-izquierda{
     position: absolute;

@@ -1,6 +1,9 @@
 import React, { useRef, useEffect } from 'react'
 import './styles.css'
 
+import { Parallax } from 'react-parallax';
+
+
 import img1 from '../../../../assets/image/beneficio1.png'
 import img2 from '../../../../assets/image/beneficio2.png'
 import img3 from '../../../../assets/image/beneficio3.png'
@@ -16,7 +19,7 @@ export const Carousel = () => {
             // obtenenemos el primer elemento del slideshow
             const primerElemento = slideshow.current.children[0];
             // Establecemos la transicionpara el slideshow
-            slideshow.current.style.transition = `800ms ease-out all`;
+            slideshow.current.style.transition = `1000ms ease-out all`;
 
             const slideSize = slideshow.current.children[0].offsetWidth;
             // Movemos el siguienteSlideshow 
@@ -59,16 +62,17 @@ export const Carousel = () => {
     }
 
     useEffect(() => {
-        intervaloslideshow.current = setInterval(() => {
-            next();
-        }, 5000);
+        // ese code lo hace para que recorra
+        // intervaloslideshow.current = setInterval(() => {
+        //     next();
+        // }, 5000);
 
-        slideshow.current.addEventListener('mouseenter', ()=> {
+        slideshow.current.addEventListener('mouseenter', () => {
             clearInterval(intervaloslideshow.current);
         });
 
         // resume 
-        slideshow.current.addEventListener('mouseleave', ()=> {
+        slideshow.current.addEventListener('mouseleave', () => {
             intervaloslideshow.current = setInterval(() => {
                 next();
             }, 5000);
@@ -78,10 +82,17 @@ export const Carousel = () => {
     return (
         <div className='Carousel-container' >
             <div className='Carousel-slide' ref={slideshow}>
-                <img src={img1} alt="beneficio1" ></img>
-                <img src={img2} alt="beneficio1" ></img>
-                <img src={img3} alt="beneficio1" ></img>
+                    <img className='Carousel-img1' src={img1} alt="beneficio1" ></img>
+                    <img className='Carousel-img2' src={img2} alt="beneficio1" ></img>
+                    <img className='Carousel-img3' src={img3} alt="beneficio1" ></img>
+
+
+                    {/* for parallax but no */}
+                    {/* <div className='Carousel-img1' alt="beneficio1" ></div>
+                    <div className='Carousel-img2' alt="beneficio1" ></div>
+                    <div className='Carousel-img3' alt="beneficio1" ></div> */}
             </div>
+
             <div className='Carousel-controles'>
                 <button onClick={prev} className='Carousel-controles-izquierda'>
                     <span>izquierda</span>
@@ -90,13 +101,6 @@ export const Carousel = () => {
                     <span>derecha</span>
                 </button>
             </div>
-            {/* <div className='Carousel-slide'>
-                <img src={img2} alt="beneficio1" ></img>
-            </div>
-            <div className='Carousel-slide'>
-                <img src={img3} alt="beneficio1" ></img>
-            </div> */}
-
         </div>
     )
 }

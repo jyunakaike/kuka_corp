@@ -8,9 +8,6 @@ export const Beneficios = () => {
       <section className='Benenficios-container'>
           {/* <img className='Benenficios-imagen' src={ require(`../../../assets/image/beneficio1.jpg`)} ></img> */}
           <Carousel />
-
-
-
       </section>
   )
 }
