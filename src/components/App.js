@@ -11,7 +11,6 @@ import { ContactsNav } from './ContactsNav';
 
 const App = () => {
   return (
-
     <React.Fragment>
         <Nav />
         <ContactsNav />

@@ -14,6 +14,7 @@ export const Introduction = () => {
         // <Parallax bgImageStyle={{height: '100%', width: '100%', minWidth:'1000px'}}  className='Introduction-container' bgImage={image2} strength={150}>
         // </Parallax>
         <Parallax bgImageStyle={{height: '110%', width: '100%', minWidth:'1000px'}}  className='Introduction-container' bgImage={bg} strength={150}>
+            {/* <div>aola</div> */}
         </Parallax>
 
 // , maxWidth: '75px', opacity: '.5'

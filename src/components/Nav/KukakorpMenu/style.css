@@ -1,0 +1,20 @@
+.KukakorpMenu-container{
+    position: absolute;
+    top:320%;
+    left:20%;
+    border-radius: 8px;
+    width:120px;
+    height: 90px;
+    padding: 10px;
+
+    z-index: 2;
+
+    background-color: rgba(255,255,255, 0.3);
+}
+
+.KukakorpMenu-container h2{
+    margin-bottom: 5%;
+    border-bottom: 1px solid black;
+}
+
+
