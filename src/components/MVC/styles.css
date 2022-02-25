@@ -23,10 +23,12 @@
 
 .MVC-container-background span{
     position: absolute;
-    left : calc(50% - 100px);
+    top: -10px;
+    left : calc(50% - 50px);
     /* background-color: blue; */
     width: 100px;
     height: 50px;
+    color: #2aa60b;
 }
 
 .MVC-cards-container{

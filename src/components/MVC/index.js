@@ -5,6 +5,8 @@ import Logo from '../../../assets/logos/MVCeye.png';
 import Nutri from '../../../assets/image/nutricionalinfo.png'
 import hand from '../../../assets/image/hand.png'
 
+import  {IoIosArrowDown}  from 'react-icons/io'
+
 export const MVC = () => {
     const element = useRef(null)
     const [show, setShow] = useState(false)
@@ -25,7 +27,7 @@ export const MVC = () => {
 
     return (
         <div className='MVC-container-background'>
-            <span>flecha</span>
+            <span><IoIosArrowDown size={'3 rem'} /></span>
             <div ref={element} className='MVC-cards-container'>
                 {
                     show &&

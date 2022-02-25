@@ -4,9 +4,11 @@ import './styles.css';
 import { GridFAQS } from './GridFAQS';
 import initialState from '../../db/db.js'
 
+import { IoIosArrowUp } from 'react-icons/io'
+
 
 export const FAQS = () => {
-  const list= initialState.FAQList;
+  const list = initialState.FAQList;
 
   const element = useRef(null)
   const [show, setShow] = useState()
@@ -30,7 +32,7 @@ export const FAQS = () => {
 
       <div ref={element} className='FAQS-grids' >
         {show &&
-          list.map( (array)=> 
+          list.map((array) =>
             <GridFAQS key={array.id} id={array.id} question={array.pregunta} answer={array.respuesta} ></GridFAQS>
           )
         }
@@ -38,9 +40,7 @@ export const FAQS = () => {
       <div className='FAQS-pagination'>
         aqui hay una paginacion
       </div>
-      <div>
-        <span>Volver arriba</span>
-      </div>
+      <IoIosArrowUp className='FAQS-arrowUp' />
     </section>
   )
 }

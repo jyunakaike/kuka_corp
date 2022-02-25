@@ -33,3 +33,12 @@
         gap: 30px
 }
 
+.FAQS-arrowUp{
+    /* background-color: blue; */
+    width: 115px;
+    height: 70px;
+    color: #2aa60b;
+    z-index:3;
+
+}
+
