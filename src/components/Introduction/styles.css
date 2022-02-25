@@ -1,16 +1,21 @@
+.Introduction-allContainer{
+    position: relative;
+    width: 100wh;
+    height: 90vh;
 
+}
 
 .Introduction-container{
     width: 100%;
     /* height: 85vh; */
-    height: 99vh;
+    height: 90vh;
     /* min-height: 1700px; */
-    position: relative;
+    
 }
 
 .Introduction-image{
     position: absolute;
-    bottom: -857px;
+    bottom: 0;
     width: 100%;
     height: 251px;
     background-image: url("../../../assets/image/topPaper.png") ;
@@ -18,7 +23,7 @@
     background-position: center;
     background-repeat: no-repeat;
     
-    clip-path: polygon(70% 91%, 100% 0, 100% 116%, 82% 124%, 0 126%, 0 0);
+    clip-path:  polygon(74% 90%, 122% 0, 100% 100%, 85% 100%, 0 100%, 0 0);
     background-color: white;
     z-index: 2;
 }

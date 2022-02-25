@@ -13,13 +13,14 @@ import bg from '../../../assets/image/IntroBackground.png'
 
 export const Introduction = () => {
     return (
-        <React.Fragment>
+        <div classname="Introduction-allContainer">
             
             <Parallax bgImageStyle={{ height: '100%', width: '100%', minWidth: '1000px' }} className='Introduction-container' bgImage={bg} strength={150}>
-                <div className='Introduction-image' > </div>
+                
             </Parallax>
+            <div className='Introduction-image' > </div>
             
-        </React.Fragment>
+        </div>
 
 
             // {/* <div>aola</div> */}
