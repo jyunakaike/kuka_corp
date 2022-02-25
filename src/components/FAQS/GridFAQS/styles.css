@@ -18,18 +18,19 @@
         align-items: center;
     animation-duration: 2s;
     animation-name: fadeIn ;
-
+    padding: 10px;
     transition: background-color,400ms linear;
 }
 
 .FAQS-grid:hover{
     border-radius: 15px;
-    width: 105%;
-    height: 105%;
+    width: 110%;
+    height: 110%;
     background-color: yellow;
     display: flex;
         justify-content: center;
         align-items: center;
+    padding: 10px;
     animation-duration: 1s;
     animation-name: fadeIn ;
 }

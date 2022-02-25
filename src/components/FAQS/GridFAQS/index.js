@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './styles.css'
 
-export const GridFAQS = ({ length }) => {
+export const GridFAQS = ({ id, question, answer }) => {
     const [hover, setHover] = useState(false)
 
     const MouseOut = () =>{
@@ -11,10 +11,8 @@ export const GridFAQS = ({ length }) => {
         setHover(true)
     }
     return (
-        <React.Fragment>
-            <div key={length} onMouseOver={MouseIn} onMouseOut={MouseOut} className='FAQS-grid'>
-                {(hover)? <p> Respuesta {length} </p>  : <p> Pregunta {length}</p>}
+            <div onMouseOver={MouseIn} onMouseOut={MouseOut} className='FAQS-grid'>
+                {(hover)? <p>{answer} </p>  : <p>{question}</p>}
             </div>
-        </React.Fragment>
     )
 }

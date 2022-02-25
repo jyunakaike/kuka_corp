@@ -2,10 +2,12 @@ import React, { useState, useEffect, useRef } from 'react';
 import './styles.css';
 
 import { GridFAQS } from './GridFAQS';
-
+import initialState from '../../db/db.js'
 
 
 export const FAQS = () => {
+  const list= initialState.FAQList;
+
   const element = useRef(null)
   const [show, setShow] = useState()
 
@@ -22,16 +24,14 @@ export const FAQS = () => {
     observer.observe(element.current)
   }, [element])
 
-  const arrays=[1,2,3,4,5,6,7,8,9,10,11,12]
-
   return (
     <section className='FAQS-container'>
       <h2> FAQS</h2>
 
       <div ref={element} className='FAQS-grids' >
         {show &&
-          arrays.map( (array)=> 
-            <GridFAQS key={array.key} length= {array} ></GridFAQS>
+          list.map( (array)=> 
+            <GridFAQS key={array.id} id={array.id} question={array.pregunta} answer={array.respuesta} ></GridFAQS>
           )
         }
       </div>

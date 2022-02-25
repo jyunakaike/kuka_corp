@@ -8,15 +8,28 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+
+        background-image: url('../../../assets/image/paper.png');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover ; 
+/* 
+        background-image: url("../../../assets/image/topPaper.png") ;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat; */
+    
+    
 }
 
 .FAQS-grids{
-    background-color: aliceblue;
-    width: 50%;
-    height: 50%;
+    /* background-color: aliceblue; */
+    width: 60%;
+    height: 60%;
     display: grid;
         place-items: center;
         grid-template-columns: 1fr 1fr 1fr 1fr ;
-        gap: 10px
+        gap: 30px
 }
 
