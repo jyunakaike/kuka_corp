@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef} from 'react';
 import './styles.css';
 
 import mapa from '../../../assets/image/mapa.png';
@@ -81,7 +81,7 @@ export const Mapa = () => {
 
       {/* localization */}
 
-      <div id='icon1' on onClick={() => mouseIn(1)} className='Mapa-localization iconLocalization1'></div>
+      <div id='icon1' onClick={() => mouseIn(1)} className='Mapa-localization iconLocalization1'></div>
       <div id='icon2' onClick={() => mouseIn(2)} className='Mapa-localization iconLocalization2'></div>
       <div id='icon3' onClick={() => mouseIn(3)} className='Mapa-localization iconLocalization3'></div>
       <div id='icon4' onClick={() => mouseIn(4)} className='Mapa-localization iconLocalization4'></div>
