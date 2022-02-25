@@ -2,6 +2,9 @@ import React, { useRef, useEffect } from 'react'
 import './styles.css'
 
 import { Parallax } from 'react-parallax';
+import {IoIosArrowForward} from 'react-icons/io'
+import {IoIosArrowBack} from 'react-icons/io'
+
 
 
 import img1 from '../../../../assets/image/beneficio1.png'
@@ -72,11 +75,11 @@ export const Carousel = () => {
         });
 
         // resume 
-        slideshow.current.addEventListener('mouseleave', () => {
-            intervaloslideshow.current = setInterval(() => {
-                next();
-            }, 5000);
-        });
+        // slideshow.current.addEventListener('mouseleave', () => {
+        //     intervaloslideshow.current = setInterval(() => {
+        //         next();
+        //     }, 5000);
+        // });
     }, [])
 
     return (
@@ -95,10 +98,11 @@ export const Carousel = () => {
 
             <div className='Carousel-controles'>
                 <button onClick={prev} className='Carousel-controles-izquierda'>
-                    <span>izquierda</span>
+                    <IoIosArrowBack className='Carousel-arrow'  />
                 </button>
                 <button onClick={next} className='Carousel-controles-derecha'>
-                    <span>derecha</span>
+                    {/* <span>derecha</span> */}
+                    <IoIosArrowForward className='Carousel-arrow'  />
                 </button>
             </div>
         </div>

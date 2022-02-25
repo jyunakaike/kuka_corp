@@ -3,7 +3,6 @@
     height: 100%;
     /* background-color: aqua; */
     overflow: hidden;
-    
 }
 
 .Carousel-slide{
@@ -55,17 +54,36 @@
     background-size: cover ; 
 } */
 
+.Carousel-controles{
+    border: none;
+    
+
+}
+
+.Carousel-arrow{
+    width: 100px;
+    height: 100px;
+    color: green;
+
+}
+
 
 .Carousel-controles-izquierda{
     position: absolute;
     left: 10%;
-    bottom: 50%;
+    bottom: 40%;
+    border: none;
+    background-color: transparent;
+    width: 100px;
 }
 
 .Carousel-controles-derecha{
     position: absolute;
     right: 10%;
-    bottom: 50%;
+    bottom: 40%;
+    border: none;
+    background-color: transparent;
+    width: 100px;
 }
 
  
