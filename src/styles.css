@@ -6,8 +6,19 @@
 
 html{
     font-size: 62.5%;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 p{
     font-size: 1.6rem;
+}
+
+h1{
+    font-weight: bold;
+    font-size:3rem;
+
+}
+
+h2{
+    font-weight: bold;
 }

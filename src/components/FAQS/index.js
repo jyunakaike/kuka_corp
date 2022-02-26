@@ -28,7 +28,7 @@ export const FAQS = () => {
 
   return (
     <section className='FAQS-container'>
-      <h2> FAQS</h2>
+      <h1> FAQS</h1>
 
       <div ref={element} className='FAQS-grids' >
         {show &&

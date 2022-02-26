@@ -34,7 +34,7 @@ export const Nav = () => {
         <ul>
           <div className='Kukakcorp'>
             <li onClick={kukacorpClick}>
-              KUKACORP
+             <h2>KUKACORP</h2>
             </li> 
             {
               (openMenukukacorp) &&
@@ -43,16 +43,16 @@ export const Nav = () => {
           </div>
 
           <div className='KukaIntro'>
-            <li onClick={kukaintroClick}>KUKA INTRO</li>
+            <li onClick={kukaintroClick}> <h2> KUKA INTRO</h2></li>
             {
               (openMenuIntro) &&
               <KukaIntro />
             }
           </div>
           
-          <li>FAQS</li>
-          <li>PUNTOS DE VENTA</li>
-          <li onClick={openModalQR} >WHATSAPP</li>
+          <li> <h2>FAQS</h2> </li>
+          <li> <h2>PUNTOS DE VENTA</h2> </li>
+          <li onClick={openModalQR} > <h2>WHATSAPP</h2> </li>
         </ul>
 
       </header>

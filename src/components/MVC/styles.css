@@ -21,7 +21,7 @@
     background-repeat: no-repeat;
 }
 
-.MVC-container-background span{
+.MVC-container-arrowDown{
     position: absolute;
     top: -10px;
     left : calc(50% - 50px);
@@ -29,7 +29,9 @@
     width: 100px;
     height: 50px;
     color: #2aa60b;
+
 }
+
 
 .MVC-cards-container{
     width: 80%;
@@ -52,7 +54,7 @@
     /* max-height: 260px; */
     border-radius: 15px;
     padding:20px 20px ;
-    background-color: green;
+    background-color: #00554a;
     display:flex;
         flex-direction: column;
         align-items: center;
@@ -60,9 +62,16 @@
     animation-duration: 2s;
     animation-name: fadeIn;
 }
-
-.MVC-card h2, .MVC-card img, .MVC-card p{
+.MVC-card h1{
     margin: 10px;
+    color: white;
+
+}
+
+.MVC-card img, .MVC-card p{
+    margin: 10px;
+    color: #2aa60b;
+    font-family: 'Montserrat', sans-serif;
 
 }
 
@@ -99,8 +108,18 @@
     animation-duration: 2s;
     animation-name: fadeIn;
 }
-.MVC-detail-title h2, p{
+
+.MVC-detail-title h1{
     margin-bottom: 10px;
+    color: #00554a;
+}
+
+.MVC-detail-title p{
+    margin-bottom: 10px;
+    color: #2aa60b;
+    font-family: 'Montserrat', sans-serif;
+    
+
 }
 
 .MVC-hand{

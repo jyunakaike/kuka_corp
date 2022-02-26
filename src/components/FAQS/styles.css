@@ -33,6 +33,12 @@
         gap: 30px
 }
 
+.FAQS-container h1{
+    color:#00554a ;
+
+}
+
+
 .FAQS-arrowUp{
     /* background-color: blue; */
     width: 115px;

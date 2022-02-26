@@ -75,7 +75,7 @@ export const Mapa = () => {
   return (
     <section className='Mapa-container'>
       <div className="Mapa-title">
-        <h2>PUNTOS DE VENTA</h2>
+        <h1>PUNTOS DE VENTA</h1>
       </div>
       <img className='Mapa-img' src={mapa} alt="mapa" />
 
