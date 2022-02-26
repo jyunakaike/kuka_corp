@@ -2,6 +2,7 @@ import React, { useState, useRef} from 'react';
 import './styles.css';
 
 import mapa from '../../../assets/image/mapa.png';
+import {IoMdCloseCircle} from 'react-icons/io';
 
 import Locali1 from '../../../assets/logos/Localization1.png'
 import Locali2 from '../../../assets/logos/Localization2.png'
@@ -47,6 +48,12 @@ export const Mapa = () => {
 
   }
 
+
+  const closeDirection = () =>{
+    setrefe1(0);
+
+  }
+
   // useEffect(() => {
   //   (icono === 'icon1' ) ? setrefe1(1) :null;
   //   (icono === 'icon2' ) ? setrefe1(2) : null;
@@ -73,6 +80,8 @@ export const Mapa = () => {
   // }
 
   return (
+
+    
     <section className='Mapa-container'>
       <div className="Mapa-title">
         <h1>PUNTOS DE VENTA</h1>
@@ -96,8 +105,10 @@ export const Mapa = () => {
       {
         (refe1 === 1)
           ?
-          <div ref={ref1} className='Mapa-detail-localization1'>
-            <p>Funtional boot Camp</p>
+          <div ref={ref1} className='Mapa-detail Mapa-detail-localization1'>
+            <div className='Mapa-detail-title' >
+              <p>Funtional boot Camp</p>  <IoMdCloseCircle onClick={closeDirection} size={'3rem'}  /> 
+            </div>
             <div> <span>icono</span> <p>Radial 19</p> </div>
             <div> <span>Tel:</span> <p>78054922</p> </div>
             <div> <span>googlemap</span> <a href='https://goo.gl/maps/E7GKhp8kTQkScKXWA'><p> https://goo.gl/maps/E7GKhp8kTQkScKXWA </p></a> </div>
@@ -106,8 +117,10 @@ export const Mapa = () => {
       }
       {
         (refe1 === 2)
-          ? <div ref={ref2} className='Mapa-detail-localization2'>
-            <p>Funtional boot Camp</p>
+          ? <div ref={ref2} className='Mapa-detail Mapa-detail-localization2'>
+            <div className='Mapa-detail-title' >
+              <p>Funtional boot Camp</p>  <IoMdCloseCircle onClick={closeDirection} size={'3rem'}  /> 
+            </div>
             <div> <span>icono</span> <p>Radial 19</p> </div>
             <div> <span>Tel:</span> <p>78054922</p> </div>
             <div> <span>googlemap</span> <a href='https://goo.gl/maps/E7GKhp8kTQkScKXWA'><p> https://goo.gl/maps/E7GKhp8kTQkScKXWA </p></a> </div>
@@ -116,8 +129,10 @@ export const Mapa = () => {
       }
       {
         (refe1 === 3)
-          ? <div ref={ref3} className='Mapa-detail-localization3'>
-            <p>Funtional boot Camp</p>
+          ? <div ref={ref3} className='Mapa-detail Mapa-detail-localization3'>
+            <div className='Mapa-detail-title' >
+              <p>Funtional boot Camp</p>  <IoMdCloseCircle onClick={closeDirection} size={'3rem'}  /> 
+            </div>
             <div> <span>icono</span> <p>Radial 19</p> </div>
             <div> <span>Tel:</span> <p>78054922</p> </div>
             <div> <span>googlemap</span> <a href='https://goo.gl/maps/E7GKhp8kTQkScKXWA'><p> https://goo.gl/maps/E7GKhp8kTQkScKXWA </p></a> </div>
@@ -127,8 +142,10 @@ export const Mapa = () => {
       {
         (refe1 === 4)
           ?
-          <div ref={ref4} className='Mapa-detail-localization4'>
-            <p>Funtional boot Camp</p>
+          <div ref={ref4} className='Mapa-detail Mapa-detail-localization4'>
+            <div className='Mapa-detail-title' >
+              <p>Funtional boot Camp</p>  <IoMdCloseCircle onClick={closeDirection} size={'3rem'}  /> 
+            </div>
             <div> <span>icono</span> <p>Radial 19</p> </div>
             <div> <span>Tel:</span> <p>78054922</p> </div>
             <div> <span>googlemap</span> <a href='https://goo.gl/maps/E7GKhp8kTQkScKXWA'><p> https://goo.gl/maps/E7GKhp8kTQkScKXWA </p></a> </div>
@@ -138,8 +155,10 @@ export const Mapa = () => {
       {
         (refe1 === 5)
           ?
-          <div ref={ref5} className='Mapa-detail-localization5'>
-            <p>Funtional boot Camp</p>
+          <div ref={ref5} className='Mapa-detail Mapa-detail-localization5'>
+            <div className='Mapa-detail-title' >
+              <p>Funtional boot Camp</p>  <IoMdCloseCircle onClick={closeDirection} size={'3rem'}  /> 
+            </div>
             <div> <span>icono</span> <p>Radial 19</p> </div>
             <div> <span>Tel:</span> <p>78054922</p> </div>
             <div> <span>googlemap</span> <a href='https://goo.gl/maps/E7GKhp8kTQkScKXWA'><p> https://goo.gl/maps/E7GKhp8kTQkScKXWA </p></a> </div>
@@ -149,8 +168,11 @@ export const Mapa = () => {
       {
         (refe1 === 6)
           ?
-          <div ref={ref6} className='Mapa-detail-localization6'>
-            <p>Funtional boot Camp</p>
+          <div ref={ref6} className='Mapa-detail Mapa-detail-localization6'>
+
+            <div className='Mapa-detail-title' >
+              <p>Funtional boot Camp</p>  <IoMdCloseCircle onClick={closeDirection} size={'3rem'}  /> 
+            </div>
             <div> <span>icono</span> <p>Radial 19</p> </div>
             <div> <span>Tel:</span> <p>78054922</p> </div>
             <div> <span>googlemap</span> <a href='https://goo.gl/maps/E7GKhp8kTQkScKXWA'><p> https://goo.gl/maps/E7GKhp8kTQkScKXWA </p></a> </div>
@@ -158,17 +180,6 @@ export const Mapa = () => {
           :
           null
       }
-
-
-
-
-
-
-
-
-
-
-
 
       {/* <img className='Mapa-localization iconLocalization1' src={Locali1} alt="mapa" /> */}
       {/* <img className='Mapa-localization iconLocalization2' src={Locali1} alt="mapa" /> */}

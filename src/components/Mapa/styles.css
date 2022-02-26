@@ -8,11 +8,7 @@
     position: absolute;
     top:10%;
     left: 20%;
-}
-
-.Mapa-title{
     color: #00554a;
-
 }
 
 .Mapa-img{
@@ -71,17 +67,14 @@
     background-color: white;
 }
 
-
-
-
+.Mapa-detail-title{
+    display: flex;
+    justify-content: space-between;
+}
 
 
 
 .Mapa-detail-localization1{
-    border-radius: 15px;
-    padding: 10px;
-    background-color: white;
-
     position: absolute;
     top:15%;
     right: 19%;
@@ -90,11 +83,6 @@
 }
 
 .Mapa-detail-localization2{
-
-    border-radius: 15px;
-    padding: 10px;
-    background-color: white;
-
     position: absolute;
     top:36%;
     right: 2%;
@@ -103,9 +91,6 @@
 }
 
 .Mapa-detail-localization3{
-    border-radius: 15px;
-    padding: 10px;
-    background-color: white;
 
     position: absolute;
     top:68%;
@@ -114,9 +99,6 @@
     /* opacity: 0; */
 }
 .Mapa-detail-localization4{
-    border-radius: 15px;
-    padding: 10px;
-    background-color: white;
 
     position: absolute;
     top:60%;
@@ -127,10 +109,6 @@
 
 .Mapa-detail-localization5{
 
-    border-radius: 15px;
-    padding: 10px;
-    background-color: white;
-
     position: absolute;
     top:36%;
     left: 10%;
@@ -139,10 +117,6 @@
 }
 
 .Mapa-detail-localization6{
-    border-radius: 15px;
-    padding: 10px;
-    background-color: white;
-
     position: absolute;
     top:15%;
     left: 5%;
@@ -154,7 +128,48 @@
 .Mapa-detail-localization2:hover,
 .Mapa-detail-localization3:hover,
 .Mapa-detail-localization4:hover,
-.Mapa-detail-localization5:hover
+.Mapa-detail-localization5:hover,
+.Mapa-detail-localization6:hover
 {
     opacity:1;
+}
+
+@media (max-width: 1000px) {
+    .Mapa-container{
+        margin-top: 10% ;
+    }
+    .Mapa-title{
+        position: absolute;
+        top: -2%;
+        left: 20%;
+        color: #00554a;
+        text-align: center;
+    }
+    .iconLocalization1:hover,
+    .iconLocalization2:hover,
+    .iconLocalization3:hover,
+    .iconLocalization4:hover,
+    .iconLocalization5:hover,
+    .iconLocalization6:hover,
+    .iconLocalization7:hover{
+        background-color: black;
+        border-radius: 15px;
+        z-index: 2;
+        opacity: 0;
+    }
+
+    
+    .Mapa-detail{
+        width: 70%;
+        height: 30%;
+        border-radius: 15px;
+        padding: 10px;
+        background-color: white;
+        display: flex;
+            flex-direction: column;
+
+
+        word-wrap: break-word; 
+    }
+
 }
