@@ -118,8 +118,6 @@
     margin-bottom: 10px;
     color: #2aa60b;
     font-family: 'Montserrat', sans-serif;
-    
-
 }
 
 .MVC-hand{
@@ -133,7 +131,113 @@
     .MVC-hand{
         display: none;
     }
+}
+@media (max-width: 760px) {
+    .MVC-container-arrowDown{
+     display: none;
+    }
+
+    .MVC-container-background{
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        /* margin-bottom: 50px; */
+        background-image: url("../../../assets/image/middlepaper.png") ;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .MVC-cards-container{
+        width: 100%;
+        /* background-color: aqua; */
+        /* height: 40vh; */
+        height: 100%;
+        margin: 0 auto;
+        padding: 0% 10% 0 10%;
     
+        display: grid;
+            grid-template-columns: 1fr  ;
+            place-items: center;
+            gap: 10px;
+    }
+    .MVC-card{
+        width: 100%;
+        min-width: 10%;
+        height: auto;
+        /* min-width: 20%; */
+        /* max-height: 260px; */
+        border-radius: 15px;
+        padding: 20px 20px;
+        background-color: #00554a;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        animation-duration: 2s;
+        animation-name: fadeIn;
+        font-size: 1rem;
+    }
+
+    .MVC-card h1{
+        margin: 2px;
+        color: white;
+    
+    }
+    
+    .MVC-card img, .MVC-card p{
+        margin: 2px;
+        color: #2aa60b;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .MVC-detail-container{
+        width: 100%;
+        /* background-color: bisque; */
+        height: auto;
+        padding: 0% 10%;
+        margin: 0 auto;
+        /* padding: 0 0% 0 15%; */
+        
+        
+        display: grid;
+            grid-template-columns: 1fr ;
+            place-items: center;
+            gap: 0;
+        
+        /* display:flex; */
+            /* justify-content: center; */
+            /* align-items:flex-start; */
+    }
+    .MVC-detail-title{
+        width: 100%;
+        min-width: 20%;
+        height: auto;
+        /* background-color:red; */
+    
+        display:flex;
+            flex-direction: column;
+            align-items: flex-start;
+        overflow: hidden;
+        animation-duration: 2s;
+        animation-name: fadeIn;
+    }
+
+    .MVC-detail-title h1{
+        margin-bottom: 10px;
+        color: #00554a;
+    }
+    
+    .MVC-detail-title p{
+        margin-bottom: 10px;
+        color: #2aa60b;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .MVC-detail-title img{
+        margin-bottom: 10px;
+    }
 }
 
 
