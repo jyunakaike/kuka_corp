@@ -46,14 +46,14 @@
         place-items: center;
 }
 .MVC-card{
-    width: 90%;
+    width: 95%;
     min-width: 10%;
-    height: 80%;
+    height: 90%;
     /* min-width: 20%; */
 
     /* max-height: 260px; */
     border-radius: 15px;
-    padding:20px 20px ;
+    padding:10px 10px ;
     background-color: #00554a;
     display:flex;
         flex-direction: column;
@@ -65,15 +65,16 @@
 .MVC-card h1{
     margin: 10px;
     color: white;
-
 }
 
 .MVC-card span{
     color: white;
-
 }
+ .MVC-card p{
+    color: #2aa60b;
+    font-family: 'Montserrat', sans-serif;}
 
-.MVC-card img, .MVC-card p{
+.MVC-card img{
     margin: 10px;
     color: #2aa60b;
     font-family: 'Montserrat', sans-serif;
