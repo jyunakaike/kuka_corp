@@ -38,7 +38,7 @@ export const FAQS = () => {
         }
       </div>
       <div className='FAQS-pagination'>
-        aqui hay una paginacion
+        {/* aqui hay una paginacion */}
       </div>
       <IoIosArrowUp className='FAQS-arrowUp' />
     </section>
