@@ -48,3 +48,23 @@
 
 }
 
+
+
+@media (max-width: 760px) {
+    .FAQS-container{
+        height: auto;
+    }
+
+    .FAQS-grids{
+        /* background-color: aliceblue; */
+        /* width: 50%; */
+        /* height: 60%; */
+        display: grid;
+            place-items: center;
+            grid-template-columns: 1fr ;
+            gap: 30px
+    }
+    
+}
+
+
