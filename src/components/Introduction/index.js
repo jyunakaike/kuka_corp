@@ -11,7 +11,7 @@ export const Introduction = () => {
             
             {/* <Parallax bgImageStyle={{ height: '100%', width: '100%', minWidth: '1000px' }} className='Introduction-container' bgImage={bg} strength={150}> */}
             {/* min width for responsive */}
-            <Parallax bgImageStyle={{ height: '100%', width: '100%', minWidth: '100px' }} className='Introduction-container' bgImage={bg} strength={150}>
+            <Parallax bgImageStyle={{ height: '100%', width: '100%', minWidth: '410px' }} className='Introduction-container' bgImage={bg} strength={150}>
                 
             </Parallax>
             <div className='Introduction-image' > </div>
