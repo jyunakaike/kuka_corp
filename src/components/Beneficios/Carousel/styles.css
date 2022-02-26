@@ -54,12 +54,12 @@
     background-size: cover ; 
 } */
 
-.Carousel-controles{
-    /* border: none; */
+/* .Carousel-controles{
+    border: none;
 }
 
 .Carousel-controles:hover{
-}
+} */
 
 
 .Carousel-arrow{
@@ -102,5 +102,12 @@
     opacity: 0.5;
 }
 
+@media (max-width: 750px) {
+    .Carousel-controles{
+        display: none;
+    }
+
+    
+}
 
  
