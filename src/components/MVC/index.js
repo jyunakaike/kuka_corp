@@ -40,14 +40,13 @@ export const MVC = () => {
                         <div className='MVC-card'>
                             <img src={Logo}></img>
                             <h1>VISIÓN</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            <p>Kukacorp es una empresa lider comprometida con la elaboración de productos que contribuyan a la consolidación de una sociedad donde se promueva la integración , se celebre la diversidad y se compartan los valores de la tierra.
                             </p>
                         </div>
                         <div className='MVC-card'>
                             <img src={Logo}></img>
                             <h1>CONTACTO</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            </p>
+                            <p><span>Kukacorp S.R.L.&nbsp;</span> 67983109</p>
                         </div>
                     </React.Fragment>
                 }

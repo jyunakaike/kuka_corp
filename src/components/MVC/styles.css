@@ -37,9 +37,9 @@
     width: 80%;
     /* background-color: aqua; */
     /* height: 40vh; */
-    height: 50vh;
+    height: 55vh;
     margin: 0 auto;
-    padding: 7% 10% 0 10%;
+    padding: 5% 10% 0 10%;
 
     display: grid;
         grid-template-columns: 1fr 1fr 1fr ;
@@ -64,6 +64,11 @@
 }
 .MVC-card h1{
     margin: 10px;
+    color: white;
+
+}
+
+.MVC-card span{
     color: white;
 
 }
