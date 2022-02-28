@@ -42,6 +42,7 @@
     font-size: 3rem;
     background-color: white;
     border-radius: 50%;
+    cursor: pointer;
 }
 .ModalContainer-element{
     width: 85%;

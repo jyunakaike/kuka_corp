@@ -8,13 +8,12 @@ import Logo from '../../../assets/logos/headerLogo.png'
 // hook
 import {useMoveSection} from '../../hook/useMoveSection'
 
-export const Nav = () => {
+export const Nav = ({openModalQR}) => {
   // for modal
-  const [openModal, setOpenModal] = useState(false);
-
-  const openModalQR = () => {
-    setOpenModal(true)
-  }
+  // const [openModal, setOpenModal] = useState(false);
+  // const openModalQR = () => {
+  //   setOpenModal(true)
+  // }
 
   const MVCid = "MVC";
   const beneficio = "beneficios";
@@ -62,10 +61,10 @@ export const Nav = () => {
           <div onClick={openModalQR} className="header-whatsapp" > <h2>WHATSAPP</h2> </div>
         </div>
       </header>
-      {
+      {/* {
         (openModal) &&
         <ModalContainer setOpenModal={setOpenModal} />
-      }
+      } */}
     </React.Fragment>
   )
 }

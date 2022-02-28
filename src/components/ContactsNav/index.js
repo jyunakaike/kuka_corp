@@ -6,12 +6,12 @@ import {IoLogoWhatsapp} from 'react-icons/io'
 
  
 
-export const ContactsNav = () => {
+export const ContactsNav = ({openModalQR}) => {
   return (
     <div className='ContactsNav'>
         <p><ImFacebook /></p>
         <p><RiInstagramFill /></p>
-        <p><IoLogoWhatsapp /></p>
+        <p><IoLogoWhatsapp style={{cursor: 'pointer'}} onClick={openModalQR} /></p>
     </div>
   )
 }

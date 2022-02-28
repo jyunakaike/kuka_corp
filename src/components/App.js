@@ -1,4 +1,4 @@
-import React from 'react';
+import React , {useState} from 'react';
 
 // components
 import { Nav } from './Nav';
@@ -9,16 +9,32 @@ import { Mapa } from './Mapa';
 import { FAQS } from './FAQS';
 import { ContactsNav } from './ContactsNav';
 
+import { ModalContainer } from './Nav/ModalContainer';
+
 const App = () => {
+  const [openModal, setOpenModal] = useState(false);
+
+  const openModalQR = () => {
+    setOpenModal(true)
+  }
+
+
   return (
     <React.Fragment>
-        <Nav />
-        <ContactsNav />
+        <Nav openModalQR={openModalQR} />
+        <ContactsNav  openModalQR={openModalQR}/>
         <Introduction />
         <MVC />
         <Beneficios />
         <Mapa />
         <FAQS />
+
+        {
+          (openModal) && <ModalContainer setOpenModal={setOpenModal} />
+        }
+
+
+
     </React.Fragment>
 
   )
