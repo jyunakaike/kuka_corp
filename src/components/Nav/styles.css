@@ -14,28 +14,85 @@ header{
     background-repeat: no-repeat;
 }
 
-ul{
+.navbar-titles{
+    height: 100%;
     display: flex;
-        justify-content: center;
-        align-items: center;
+    align-items: center;
+    gap: 20px;
+
+    cursor: pointer;
 }
-li{
-    list-style-type: none;
-        padding-left: 30px;
-}
+
 
 .Kukakcorp{
     position: relative;
+    height: 100%;    
+    display:flex;
+        align-items:center;
+}
 
+.KukakorpMenu-container{
+    display:none; 
+    position: absolute;
+    bottom:-150%;
+    left:-10%;
+    border-radius: 8px;
+    width:120px;
+    height: 90px;
+    padding: 10px;
+
+    z-index: 2;
+
+    background-color: rgba(255,255,255, 0.3);
+
+}
+
+.KukakorpMenu-container h2{
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 5%;
+    border-bottom: 1px solid black;
+}
+
+.Kukakcorp:hover .KukakorpMenu-container
+{
+    display: block;
+    /* background-color: black; */
 }
 
 .KukaIntro{
     position: relative;
+    height: 100%;    
+    display:flex;
+        align-items:center;
+}
+
+
+.KukaIntro-Menu{
+    display:none; 
+    position: absolute;
+    bottom:-330%;
+    left:-30%;
+    border-radius: 8px;
+    width:300px;
+    height: 200px;
+    padding: 20px;
+    z-index: 2;
+    background-color: rgba(255,255,255, 0.3);
+    
+}
+
+.KukaIntro-Menu h2{
+    margin-bottom: 5%;
+    border-bottom: 1px solid black;
+}
+
+.KukaIntro:hover .KukaIntro-Menu {
+    display:block;
 }
 
 
 @media (max-width: 760px) {
-    ul{
+    .navbar-titles{
         display: none;
     }
     
