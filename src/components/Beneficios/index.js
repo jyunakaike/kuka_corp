@@ -5,7 +5,7 @@ import './styles.css';
 
 export const Beneficios = () => {
   return (
-      <section className='Benenficios-container'>
+      <section className='Benenficios-container' id='beneficios'>
           {/* <img className='Benenficios-imagen' src={ require(`../../../assets/image/beneficio1.jpg`)} ></img> */}
           <Carousel />
       </section>

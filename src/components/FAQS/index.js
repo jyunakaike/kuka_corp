@@ -27,7 +27,7 @@ export const FAQS = () => {
   }, [element])
 
   return (
-    <section className='FAQS-container'>
+    <section className='FAQS-container' id='FAQS'>
       <h1> FAQS</h1>
 
       <div ref={element} className='FAQS-grids' >

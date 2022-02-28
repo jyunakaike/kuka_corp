@@ -82,7 +82,7 @@ export const Mapa = () => {
   return (
 
     
-    <section className='Mapa-container'>
+    <section className='Mapa-container' id='Mapa'>
       <div className="Mapa-title">
         <h1>PUNTOS DE VENTA</h1>
       </div>

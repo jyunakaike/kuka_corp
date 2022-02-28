@@ -53,10 +53,8 @@ header{
     border-bottom: 1px solid black;
 }
 
-.Kukakcorp:hover .KukakorpMenu-container
-{
+.Kukakcorp:hover .KukakorpMenu-container{
     display: block;
-    /* background-color: black; */
 }
 
 .KukaIntro{
@@ -86,9 +84,26 @@ header{
     border-bottom: 1px solid black;
 }
 
-.KukaIntro:hover .KukaIntro-Menu {
+.KukaIntro:hover .KukaIntro-Menu ,
+.Kukakcorp:hover .KukakorpMenu-container
+/* .KukaFAQS:hover,
+.KukaPuntosVenta:hover,
+.header-whatsapp:hover */
+{
     display:block;
 }
+
+/* .KukaIntro:hover ,
+.Kukakcorp:hover, 
+.KukaFAQS:hover,
+.KukaPuntosVenta:hover,
+.header-whatsapp:hover{
+    border:1px solid;
+    border-radius: 15px;
+    padding: 10px;
+} */
+
+
 
 
 @media (max-width: 760px) {

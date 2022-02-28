@@ -26,7 +26,7 @@ export const MVC = () => {
 
 
     return (
-        <div className='MVC-container-background'>
+        <div className='MVC-container-background' id='MVC'>
             <span><IoIosArrowDown className='MVC-container-arrowDown' /></span>
             <div ref={element} className='MVC-cards-container'>
                 {
