@@ -10,9 +10,28 @@
         align-items: center;
     z-index: 5;
 
-    color: #2aa60b;
+    /* color: #2aa60b; */
+    color: rgb(255, 123, 0);
 }
 
 .ContactsNav p {
     margin-bottom: 50px;
+}
+
+@media (max-width: 1000px) {
+    .ContactsNav{
+        position: fixed;
+        /* padding-top: 10%; */
+        width: 35px;
+        height: 100%;
+        
+        display: flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+        z-index: 5;
+    
+        /* color: #2aa60b; */
+        color: rgb(255, 123, 0);
+    }
 }
