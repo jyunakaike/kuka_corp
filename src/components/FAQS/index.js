@@ -6,12 +6,16 @@ import initialState from '../../db/db.js'
 
 import { IoIosArrowUp } from 'react-icons/io'
 
+import {useMoveSection} from '../../hook/useMoveSection'
+
 
 export const FAQS = () => {
   const list = initialState.FAQList;
 
   const element = useRef(null)
   const [show, setShow] = useState()
+
+  const Nav = "Nav"
 
   useEffect(() => {
     const observer = new window.IntersectionObserver((entries) => {
@@ -40,7 +44,7 @@ export const FAQS = () => {
       <div className='FAQS-pagination'>
         {/* aqui hay una paginacion */}
       </div>
-      <IoIosArrowUp className='FAQS-arrowUp' />
+      <IoIosArrowUp onClick={()=> {useMoveSection(Nav)}} className='FAQS-arrowUp' />
     </section>
   )
 }

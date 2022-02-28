@@ -23,12 +23,13 @@
 
 .MVC-container-arrowDown{
     position: absolute;
-    top: -10px;
+    top: -50px;
     left : calc(50% - 50px);
     /* background-color: blue; */
     width: 100px;
     height: 50px;
     color: #2aa60b;
+    z-index: 2;
 
 }
 

@@ -7,9 +7,14 @@ import hand from '../../../assets/image/hand.png'
 
 import  {IoIosArrowDown}  from 'react-icons/io'
 
+// hook
+import {useMoveSection} from '../../hook/useMoveSection'
+
 export const MVC = () => {
     const element = useRef(null)
     const [show, setShow] = useState(false)
+
+    const MVCid = "MVC";
 
     useEffect(() => {
         const observer = new window.IntersectionObserver((entries) => {
@@ -27,7 +32,7 @@ export const MVC = () => {
 
     return (
         <div className='MVC-container-background' id='MVC'>
-            <span><IoIosArrowDown className='MVC-container-arrowDown' /></span>
+            <span><IoIosArrowDown onClick={()=>{useMoveSection(MVCid)}} className='MVC-container-arrowDown' /></span>
             <div ref={element} className='MVC-cards-container'>
                 {
                     show &&
