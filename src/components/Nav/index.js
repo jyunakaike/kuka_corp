@@ -19,11 +19,7 @@ export const Nav = () => {
   const MAPA = "Mapa"
 
   const moveSection = (id) => {
-    // window.location.replace("/#MVC")
     let element = document.getElementById(id)
-
-    // document.querySelector('.MVC-container-background').scrollIntoView({ behavior: 'smooth' })
-
     element.scrollIntoView({behavior: "smooth"})
   }
 

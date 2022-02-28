@@ -15,13 +15,8 @@ export const Mapa = () => {
   // const [getRef, setGetRef] = useState()
 
   const [refe1, setrefe1] = useState(0)
-  // const [refe2, setrefe2] = useState(false)
-  // const [refe3, setrefe3] = useState(false)
-  // const [refe4, setrefe4] = useState(false)
-  // const [refe5, setrefe5] = useState(false)
-  // const [refe6, setrefe6] = useState(false)
+  const [refe, setrefe] = useState(0)
 
-  const [icono, setIcono] = useState()
 
   const ref1 = useRef(null)
   const ref2 = useRef(null)
@@ -40,45 +35,27 @@ export const Mapa = () => {
     (id === 4 && refe1 != 4) ? setrefe1(id) : null;
     (id === 5 && refe1 != 5) ? setrefe1(id) : null;
     (id === 6 && refe1 != 6) ? setrefe1(id) : null;
-
-    // let temp = event.currentTarget.id;
-    // setIcono(temp)
-    // // console.log(temp)
-    // console.log(refe1)
-
   }
-
-
   const closeDirection = () =>{
     setrefe1(0);
-
   }
 
-  // useEffect(() => {
-  //   (icono === 'icon1' ) ? setrefe1(1) :null;
-  //   (icono === 'icon2' ) ? setrefe1(2) : null;
-  //   (icono === 'icon3' ) ? setrefe1(3) : null;
-  //   (icono === 'icon4' ) ? setrefe1(4) : null;
-  //   (icono === 'icon5' ) ? setrefe1(5) : null;
-  //   (icono === 'icon6' ) ? setrefe1(6) : null;
-  // }, [icono, refe1])
+  // const mouseHover = (id) => {
+  //   console.log("is in");
 
-
-  // const mouseIn = (refer , event) => {
-  //   setOnHover(true)
-  //   console.log(refer);
-
-
-  //   // setGetRef(refer)
+  //   (id === 1 ) ? setrefe(id) : null;
+  //   (id === 2 ) ? setrefe(id) : null;
+  //   (id === 3 ) ? setrefe(id) : null;
+  //   (id === 4 ) ? setrefe(id) : null;
+  //   (id === 5 ) ? setrefe(id) : null;
+  //   (id === 6 ) ? setrefe(id) : null;
   // }
 
-
-  // const mouseOut = () => {
-  //   // let temp = event.currentTarget.id;
-  //   // console.log(temp)
-  //   // console.log(ref1.current.style.opacity)
+  // const mouseLeave = ()=> {
+  //   console.log("is out");
+  //   setrefe(0);
   // }
-
+  
   return (
 
     
@@ -90,20 +67,27 @@ export const Mapa = () => {
 
       {/* localization */}
 
-      <div id='icon1' onClick={() => mouseIn(1)} className='Mapa-localization iconLocalization1'></div>
-      <div id='icon2' onClick={() => mouseIn(2)} className='Mapa-localization iconLocalization2'></div>
-      <div id='icon3' onClick={() => mouseIn(3)} className='Mapa-localization iconLocalization3'></div>
-      <div id='icon4' onClick={() => mouseIn(4)} className='Mapa-localization iconLocalization4'></div>
-      <div id='icon5' onClick={() => mouseIn(5)} className='Mapa-localization iconLocalization5'></div>
-      <div id='icon6' onClick={() => mouseIn(6)} className='Mapa-localization iconLocalization6'></div>
+      <div id='icon1' onClick={() => mouseIn(1)}  className='Mapa-localization iconLocalization1'></div>
+      <div id='icon2' onClick={() => mouseIn(2)}  className='Mapa-localization iconLocalization2'></div>
+      <div id='icon3' onClick={() => mouseIn(3)}  className='Mapa-localization iconLocalization3'></div>
+      <div id='icon4' onClick={() => mouseIn(4)}  className='Mapa-localization iconLocalization4'></div>
+      <div id='icon5' onClick={() => mouseIn(5)}  className='Mapa-localization iconLocalization5'></div>
+      <div id='icon6' onClick={() => mouseIn(6)}  className='Mapa-localization iconLocalization6'></div>
 
+
+      {/* <div id='icon1' onClick={() => mouseIn(1)} onMouseOver={()=> mouseHover(1)} onMouseLeave={mouseLeave}  className='Mapa-localization iconLocalization1'></div>
+      <div id='icon2' onClick={() => mouseIn(2)} onMouseOver={()=> mouseHover(2)} onMouseLeave={mouseLeave} className='Mapa-localization iconLocalization2'></div>
+      <div id='icon3' onClick={() => mouseIn(3)} onMouseOver={()=> mouseHover(3)} onMouseLeave={mouseLeave} className='Mapa-localization iconLocalization3'></div>
+      <div id='icon4' onClick={() => mouseIn(4)} onMouseOver={()=> mouseHover(4)} onMouseLeave={mouseLeave} className='Mapa-localization iconLocalization4'></div>
+      <div id='icon5' onClick={() => mouseIn(5)} onMouseOver={()=> mouseHover(5)} onMouseLeave={mouseLeave} className='Mapa-localization iconLocalization5'></div>
+      <div id='icon6' onClick={() => mouseIn(6)} onMouseOver={()=> mouseHover(6)} onMouseLeave={mouseLeave} className='Mapa-localization iconLocalization6'></div> */}
 
       {/* {
         (onHover) &&
       } */}
 
       {
-        (refe1 === 1)
+        (refe1 === 1) || (refe===1) 
           ?
           <div ref={ref1} className='Mapa-detail Mapa-detail-localization1'>
             <div className='Mapa-detail-title' >
@@ -116,7 +100,7 @@ export const Mapa = () => {
           : null
       }
       {
-        (refe1 === 2)
+        (refe1 === 2) || (refe===2) 
           ? <div ref={ref2} className='Mapa-detail Mapa-detail-localization2'>
             <div className='Mapa-detail-title' >
               <p>Funtional boot Camp</p>  <IoMdCloseCircle onClick={closeDirection} size={'3rem'}  /> 
@@ -128,7 +112,7 @@ export const Mapa = () => {
           : null
       }
       {
-        (refe1 === 3)
+        (refe1 === 3)  || (refe===3) 
           ? <div ref={ref3} className='Mapa-detail Mapa-detail-localization3'>
             <div className='Mapa-detail-title' >
               <p>Funtional boot Camp</p>  <IoMdCloseCircle onClick={closeDirection} size={'3rem'}  /> 
@@ -140,7 +124,7 @@ export const Mapa = () => {
           : null
       }
       {
-        (refe1 === 4)
+        (refe1 === 4)  || (refe===4) 
           ?
           <div ref={ref4} className='Mapa-detail Mapa-detail-localization4'>
             <div className='Mapa-detail-title' >
@@ -153,7 +137,7 @@ export const Mapa = () => {
           : null
       }
       {
-        (refe1 === 5)
+        (refe1 === 5)  || (refe===5) 
           ?
           <div ref={ref5} className='Mapa-detail Mapa-detail-localization5'>
             <div className='Mapa-detail-title' >
@@ -166,7 +150,7 @@ export const Mapa = () => {
           : null
       }
       {
-        (refe1 === 6)
+        (refe1 === 6)  || (refe===6) 
           ?
           <div ref={ref6} className='Mapa-detail Mapa-detail-localization6'>
 
