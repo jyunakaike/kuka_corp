@@ -3,15 +3,18 @@
     width: 100%;
     height: 100vh;
     background-color: white;
+    margin-top: 100px;
 }
 .Mapa-title{
     position: absolute;
-    top:10%;
+    top:-10%;
     left: 20%;
     color: #00554a;
 }
 
 .Mapa-img{
+    /* margin-top:10% ; */
+    /* padding-top:10% ; */
     width: 100%;
     height: 100%;
 }
@@ -23,48 +26,45 @@
 }
 
 .iconLocalization1{
-    top:30%;
-    right: 44.89%;
+    top:0%;
+    right: 46%;
 }
 .iconLocalization2{
-    top:39.7%;
-    right: 28.5%;
+    top:24%;
+    right: 48.6%;
 }
 .iconLocalization3{
-    top:60.5%;
-    right: 34%;
+    top:48%;
+    right: 64.5%;
 }
 .iconLocalization4{
-    top:64%;
-    left: 34.7%;
+    top:13%;
+    left: 36%;
 }
-.iconLocalization5{
+/* .iconLocalization5{
     top:40.8%;
     left: 38.6%;
 }
 .iconLocalization6{
     top:25.8%;
     left: 30.6%;
-}
+} */
 
 .iconLocalization1:hover,
 .iconLocalization2:hover,
 .iconLocalization3:hover,
-.iconLocalization4:hover,
-.iconLocalization5:hover,
-.iconLocalization6:hover,
-.iconLocalization7:hover{
+.iconLocalization4:hover{
     background-color: black;
     border-radius: 15px;
     z-index: 2;
     opacity: 0.5;
 }
 
-
 .Mapa-detail{
     border-radius: 15px;
     padding: 10px;
     background-color: white;
+    
 }
 
 .Mapa-detail-title{
@@ -76,16 +76,16 @@
 
 .Mapa-detail-localization1{
     position: absolute;
-    top:15%;
-    right: 19%;
-    border: solid blue ;
+    top:-5%;
+    right: 15%;
+    border: solid red ;
     /* opacity: 0; */
 }
 
 .Mapa-detail-localization2{
     position: absolute;
-    top:36%;
-    right: 2%;
+    top:20%;
+    right: 20%;
     border: solid blue ;
     /* opacity: 0; */
 }
@@ -93,33 +93,16 @@
 .Mapa-detail-localization3{
 
     position: absolute;
-    top:68%;
-    right: 5%;
+    top:45%;
+    left: 5%;
     border: solid blue ;
     /* opacity: 0; */
 }
 .Mapa-detail-localization4{
 
     position: absolute;
-    top:60%;
+    top:10%;
     left: 8%;
-    border: solid red ;
-    /* opacity: 0; */
-}
-
-.Mapa-detail-localization5{
-
-    position: absolute;
-    top:36%;
-    left: 10%;
-    border: solid orange ;
-    /* opacity: 0; */
-}
-
-.Mapa-detail-localization6{
-    position: absolute;
-    top:15%;
-    left: 5%;
     border: solid red ;
     /* opacity: 0; */
 }
@@ -127,26 +110,25 @@
 .Mapa-detail-localization1:hover,
 .Mapa-detail-localization2:hover,
 .Mapa-detail-localization3:hover,
-.Mapa-detail-localization4:hover,
-.Mapa-detail-localization5:hover,
-.Mapa-detail-localization6:hover
-{
+.Mapa-detail-localization4:hover{
     opacity:1;
 }
 
 @media (max-width: 1000px) {
     .Mapa-container{
-        margin-top: 10% ;
+        /* margin-top: 10% ; */
         height: 70vh;
     }
+
+
     .Mapa-title{
         position: absolute;
-        top: -2%;
+        top: -10%;
         left: 10%;
         color: #00554a;
         text-align: center;
     }
-    /* .iconLocalization1:hover,
+    .iconLocalization1:hover,
     .iconLocalization2:hover,
     .iconLocalization3:hover,
     .iconLocalization4:hover,
@@ -157,26 +139,21 @@
         border-radius: 15px;
         z-index: 2;
         opacity: 0;
-    } */
-    .iconLocalization1,
+    }
+    /* .iconLocalization1,
     .iconLocalization2,
     .iconLocalization3,
-    .iconLocalization4,
-    .iconLocalization5,
-    .iconLocalization6,
-    .iconLocalization7{
+    .iconLocalization4{
         background-color: black;
         border-radius: 15px;
         z-index: 2;
         opacity: 0;
         opacity: 1;
-
-    }
-
-    
+    } */
+   
     .Mapa-detail{
         width: 70%;
-        height: 30%;
+        height: auto;
         border-radius: 15px;
         padding: 10px;
         background-color: white;

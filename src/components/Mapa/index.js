@@ -1,8 +1,8 @@
-import React, { useState, useRef} from 'react';
+import React, { useState, useRef } from 'react';
 import './styles.css';
 
-import mapa from '../../../assets/image/mapa.png';
-import {IoMdCloseCircle} from 'react-icons/io';
+import mapa from '../../../assets/image/maps1.png';
+import { IoMdCloseCircle } from 'react-icons/io';
 
 import Locali1 from '../../../assets/logos/Localization1.png'
 import Locali2 from '../../../assets/logos/Localization2.png'
@@ -36,7 +36,7 @@ export const Mapa = () => {
     (id === 5 && refe1 != 5) ? setrefe1(id) : null;
     (id === 6 && refe1 != 6) ? setrefe1(id) : null;
   }
-  const closeDirection = () =>{
+  const closeDirection = () => {
     setrefe1(0);
   }
 
@@ -55,10 +55,10 @@ export const Mapa = () => {
   //   console.log("is out");
   //   setrefe(0);
   // }
-  
+
   return (
 
-    
+
     <section className='Mapa-container' id='Mapa'>
       <div className="Mapa-title">
         <h1>PUNTOS DE VENTA</h1>
@@ -67,12 +67,12 @@ export const Mapa = () => {
 
       {/* localization */}
 
-      <div id='icon1' onClick={() => mouseIn(1)}  className='Mapa-localization iconLocalization1'></div>
-      <div id='icon2' onClick={() => mouseIn(2)}  className='Mapa-localization iconLocalization2'></div>
-      <div id='icon3' onClick={() => mouseIn(3)}  className='Mapa-localization iconLocalization3'></div>
-      <div id='icon4' onClick={() => mouseIn(4)}  className='Mapa-localization iconLocalization4'></div>
-      <div id='icon5' onClick={() => mouseIn(5)}  className='Mapa-localization iconLocalization5'></div>
-      <div id='icon6' onClick={() => mouseIn(6)}  className='Mapa-localization iconLocalization6'></div>
+      <div id='icon1' onClick={() => mouseIn(1)} className='Mapa-localization iconLocalization1'></div>
+      <div id='icon2' onClick={() => mouseIn(2)} className='Mapa-localization iconLocalization2'></div>
+      <div id='icon3' onClick={() => mouseIn(3)} className='Mapa-localization iconLocalization3'></div>
+      <div id='icon4' onClick={() => mouseIn(4)} className='Mapa-localization iconLocalization4'></div>
+      <div id='icon5' onClick={() => mouseIn(5)} className='Mapa-localization iconLocalization5'></div>
+      <div id='icon6' onClick={() => mouseIn(6)} className='Mapa-localization iconLocalization6'></div>
 
 
       {/* <div id='icon1' onClick={() => mouseIn(1)} onMouseOver={()=> mouseHover(1)} onMouseLeave={mouseLeave}  className='Mapa-localization iconLocalization1'></div>
@@ -87,11 +87,11 @@ export const Mapa = () => {
       } */}
 
       {
-        (refe1 === 1) || (refe===1) 
+        (refe1 === 1) || (refe === 1)
           ?
           <div ref={ref1} className='Mapa-detail Mapa-detail-localization1'>
             <div className='Mapa-detail-title' >
-              <p>Funtional boot Camp</p>  <IoMdCloseCircle onClick={closeDirection} size={'3rem'}  /> 
+              <p>Funtional boot Camp</p>  <IoMdCloseCircle onClick={closeDirection} size={'3rem'} />
             </div>
             <div> <span>icono</span> <p>Radial 19</p> </div>
             <div> <span>Tel:</span> <p>78054922</p> </div>
@@ -100,10 +100,10 @@ export const Mapa = () => {
           : null
       }
       {
-        (refe1 === 2) || (refe===2) 
+        (refe1 === 2) || (refe === 2)
           ? <div ref={ref2} className='Mapa-detail Mapa-detail-localization2'>
             <div className='Mapa-detail-title' >
-              <p>Funtional boot Camp</p>  <IoMdCloseCircle onClick={closeDirection} size={'3rem'}  /> 
+              <p>Funtional boot Camp</p>  <IoMdCloseCircle onClick={closeDirection} size={'3rem'} />
             </div>
             <div> <span>icono</span> <p>Radial 19</p> </div>
             <div> <span>Tel:</span> <p>78054922</p> </div>
@@ -112,10 +112,10 @@ export const Mapa = () => {
           : null
       }
       {
-        (refe1 === 3)  || (refe===3) 
+        (refe1 === 3) || (refe === 3)
           ? <div ref={ref3} className='Mapa-detail Mapa-detail-localization3'>
             <div className='Mapa-detail-title' >
-              <p>Funtional boot Camp</p>  <IoMdCloseCircle onClick={closeDirection} size={'3rem'}  /> 
+              <p>Funtional boot Camp</p>  <IoMdCloseCircle onClick={closeDirection} size={'3rem'} />
             </div>
             <div> <span>icono</span> <p>Radial 19</p> </div>
             <div> <span>Tel:</span> <p>78054922</p> </div>
@@ -124,11 +124,11 @@ export const Mapa = () => {
           : null
       }
       {
-        (refe1 === 4)  || (refe===4) 
+        (refe1 === 4) || (refe === 4)
           ?
           <div ref={ref4} className='Mapa-detail Mapa-detail-localization4'>
             <div className='Mapa-detail-title' >
-              <p>Funtional boot Camp</p>  <IoMdCloseCircle onClick={closeDirection} size={'3rem'}  /> 
+              <p>Funtional boot Camp</p>  <IoMdCloseCircle onClick={closeDirection} size={'3rem'} />
             </div>
             <div> <span>icono</span> <p>Radial 19</p> </div>
             <div> <span>Tel:</span> <p>78054922</p> </div>
@@ -137,11 +137,11 @@ export const Mapa = () => {
           : null
       }
       {
-        (refe1 === 5)  || (refe===5) 
+        (refe1 === 5) || (refe === 5)
           ?
           <div ref={ref5} className='Mapa-detail Mapa-detail-localization5'>
             <div className='Mapa-detail-title' >
-              <p>Funtional boot Camp</p>  <IoMdCloseCircle onClick={closeDirection} size={'3rem'}  /> 
+              <p>Funtional boot Camp</p>  <IoMdCloseCircle onClick={closeDirection} size={'3rem'} />
             </div>
             <div> <span>icono</span> <p>Radial 19</p> </div>
             <div> <span>Tel:</span> <p>78054922</p> </div>
@@ -150,12 +150,12 @@ export const Mapa = () => {
           : null
       }
       {
-        (refe1 === 6)  || (refe===6) 
+        (refe1 === 6) || (refe === 6)
           ?
           <div ref={ref6} className='Mapa-detail Mapa-detail-localization6'>
 
             <div className='Mapa-detail-title' >
-              <p>Funtional boot Camp</p>  <IoMdCloseCircle onClick={closeDirection} size={'3rem'}  /> 
+              <p>Funtional boot Camp</p>  <IoMdCloseCircle onClick={closeDirection} size={'3rem'} />
             </div>
             <div> <span>icono</span> <p>Radial 19</p> </div>
             <div> <span>Tel:</span> <p>78054922</p> </div>
