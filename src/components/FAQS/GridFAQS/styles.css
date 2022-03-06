@@ -21,6 +21,7 @@
     padding: 10px;
     transition: background-color,400ms linear;
     color: white;
+    text-align: center;
 }
 
 .FAQS-grid:hover{

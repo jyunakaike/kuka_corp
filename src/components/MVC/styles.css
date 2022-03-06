@@ -46,9 +46,9 @@
         place-items: center;
 }
 .MVC-card{
-    width: 95%;
+    width: 99.5%;
     min-width: 10%;
-    height: 90%;
+    height: 100%;
     /* min-width: 20%; */
 
     /* max-height: 260px; */
@@ -61,6 +61,7 @@
     overflow: hidden;
     animation-duration: 2s;
     animation-name: fadeIn;
+    text-align: center;
 }
 .MVC-card h1{
     margin: 10px;
@@ -70,15 +71,15 @@
 .MVC-card span{
     color: white;
 }
- .MVC-card p{
-    color: #2aa60b;
-    font-family: 'Montserrat', sans-serif;}
+.MVC-card p{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
 
 .MVC-card img{
     margin: 10px;
     color: #2aa60b;
     font-family: 'Montserrat', sans-serif;
-
 }
 
 
@@ -193,7 +194,7 @@
        
     .MVC-card img, .MVC-card p{
         margin: 2px;
-        color: #2aa60b;
+        color: white;
         font-family: 'Montserrat', sans-serif;
     }
 
