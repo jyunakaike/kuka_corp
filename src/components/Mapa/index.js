@@ -93,7 +93,7 @@ export const Mapa = () => {
             <div className='Mapa-detail-title' >
               <p>Bici Taller Recycling Santa Cruz</p>  <IoMdCloseCircle onClick={closeDirection} size={'3rem'} />
             </div>
-            <div> <span>icono</span> <p>Radial 19</p> </div>
+            <div> <span>Dirección</span> <p>Av. Radial 27</p> </div>
             <div> <span>Tel:</span> <p>60912287</p> </div>
             <div> <span>googlemap</span> <a href='https://goo.gl/maps/vmHqZPu98aoZcWHs7'><p>https://goo.gl/maps/vmHqZPu98aoZcWHs7 </p></a> </div>
           </div>
@@ -105,7 +105,7 @@ export const Mapa = () => {
             <div className='Mapa-detail-title' >
               <p>Calistenia Bolivia – El Cristo</p>  <IoMdCloseCircle onClick={closeDirection} size={'3rem'} />
             </div>
-            <div> <span>icono</span> <p>Radial 19</p> </div>
+            <div> <span>Dirección</span> <p>C/ Padre R Melgar</p> </div>
             <div> <span>Tel:</span> <p>73196937</p> </div>
             <div> <span>googlemap</span> <a href='https://goo.gl/maps/yU4eKBSdd6gAWFpy5'><p> https://goo.gl/maps/yU4eKBSdd6gAWFpy5 </p></a> </div>
           </div>
@@ -117,7 +117,7 @@ export const Mapa = () => {
             <div className='Mapa-detail-title' >
               <p> 039 Functional Boot Camp</p>  <IoMdCloseCircle onClick={closeDirection} size={'3rem'} />
             </div>
-            <div> <span>icono</span> <p>Radial 19</p> </div>
+            <div> <span>Dirección</span> <p>Av. Radial 19</p> </div>
             <div> <span>Tel:</span> <p>78054922</p> </div>
             <div> <span>googlemap</span> <a href='https://goo.gl/maps/NaKKR6quuquTgGRJ6'><p>https://goo.gl/maps/NaKKR6quuquTgGRJ6</p></a> </div>
           </div>
@@ -130,13 +130,13 @@ export const Mapa = () => {
             <div className='Mapa-detail-title' >
               <p>Sir Pieper Resto - Bar</p>  <IoMdCloseCircle onClick={closeDirection} size={'3rem'} />
             </div>
-            <div> <span>icono</span> <p>Radial 19</p> </div>
+            <div> <span>Dirección</span> <p>Zona Rio Piraí</p> </div>
             <div> <span>Tel:</span> <p>77606555</p> </div>
             <div> <span>googlemap</span> <a href='https://goo.gl/maps/AjuYgYavERBfy9ps9'><p> https://goo.gl/maps/AjuYgYavERBfy9ps9</p></a> </div>
           </div>
           : null
       }
-      {
+      {/* {
         (refe1 === 5) || (refe === 5)
           ?
           <div ref={ref5} className='Mapa-detail Mapa-detail-localization5'>
@@ -163,7 +163,7 @@ export const Mapa = () => {
           </div>
           :
           null
-      }
+      } */}
 
       {/* <img className='Mapa-localization iconLocalization1' src={Locali1} alt="mapa" /> */}
       {/* <img className='Mapa-localization iconLocalization2' src={Locali1} alt="mapa" /> */}
