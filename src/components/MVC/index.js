@@ -45,7 +45,7 @@ export const MVC = () => {
                         <div className='MVC-card'>
                             <img src={Logo}></img>
                             <h1>VISIÓN</h1>
-                            <p>Kukacorp es una empresa lider comprometida con la elaboración de productos que contribuyan a la consolidación de una sociedad donde se promueva la integración , se celebre la diversidad y se compartan los valores de la tierra.
+                            <p>Kukacorp es una empresa líder comprometida con la elaboración de productos que contribuyan a la consolidación de una sociedad donde se promueva la integración, se celebre la diversidad y se compartan los valores de la tierra.
                             </p>
                         </div>
                         <div className='MVC-card'>
