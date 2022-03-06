@@ -91,11 +91,11 @@ export const Mapa = () => {
           ?
           <div ref={ref1} className='Mapa-detail Mapa-detail-localization1'>
             <div className='Mapa-detail-title' >
-              <p>Funtional boot Camp</p>  <IoMdCloseCircle onClick={closeDirection} size={'3rem'} />
+              <p>Bici Taller Recycling Santa Cruz</p>  <IoMdCloseCircle onClick={closeDirection} size={'3rem'} />
             </div>
             <div> <span>icono</span> <p>Radial 19</p> </div>
-            <div> <span>Tel:</span> <p>78054922</p> </div>
-            <div> <span>googlemap</span> <a href='https://goo.gl/maps/E7GKhp8kTQkScKXWA'><p> https://goo.gl/maps/E7GKhp8kTQkScKXWA </p></a> </div>
+            <div> <span>Tel:</span> <p>60912287</p> </div>
+            <div> <span>googlemap</span> <a href='https://goo.gl/maps/vmHqZPu98aoZcWHs7'><p>https://goo.gl/maps/vmHqZPu98aoZcWHs7 </p></a> </div>
           </div>
           : null
       }
@@ -103,11 +103,11 @@ export const Mapa = () => {
         (refe1 === 2) || (refe === 2)
           ? <div ref={ref2} className='Mapa-detail Mapa-detail-localization2'>
             <div className='Mapa-detail-title' >
-              <p>Funtional boot Camp</p>  <IoMdCloseCircle onClick={closeDirection} size={'3rem'} />
+              <p>Calistenia Bolivia – El Cristo</p>  <IoMdCloseCircle onClick={closeDirection} size={'3rem'} />
             </div>
             <div> <span>icono</span> <p>Radial 19</p> </div>
-            <div> <span>Tel:</span> <p>78054922</p> </div>
-            <div> <span>googlemap</span> <a href='https://goo.gl/maps/E7GKhp8kTQkScKXWA'><p> https://goo.gl/maps/E7GKhp8kTQkScKXWA </p></a> </div>
+            <div> <span>Tel:</span> <p>73196937</p> </div>
+            <div> <span>googlemap</span> <a href='https://goo.gl/maps/yU4eKBSdd6gAWFpy5'><p> https://goo.gl/maps/yU4eKBSdd6gAWFpy5 </p></a> </div>
           </div>
           : null
       }
@@ -115,11 +115,11 @@ export const Mapa = () => {
         (refe1 === 3) || (refe === 3)
           ? <div ref={ref3} className='Mapa-detail Mapa-detail-localization3'>
             <div className='Mapa-detail-title' >
-              <p>Funtional boot Camp</p>  <IoMdCloseCircle onClick={closeDirection} size={'3rem'} />
+              <p> 039 Functional Boot Camp</p>  <IoMdCloseCircle onClick={closeDirection} size={'3rem'} />
             </div>
             <div> <span>icono</span> <p>Radial 19</p> </div>
             <div> <span>Tel:</span> <p>78054922</p> </div>
-            <div> <span>googlemap</span> <a href='https://goo.gl/maps/E7GKhp8kTQkScKXWA'><p> https://goo.gl/maps/E7GKhp8kTQkScKXWA </p></a> </div>
+            <div> <span>googlemap</span> <a href='https://goo.gl/maps/NaKKR6quuquTgGRJ6'><p>https://goo.gl/maps/NaKKR6quuquTgGRJ6</p></a> </div>
           </div>
           : null
       }
@@ -128,11 +128,11 @@ export const Mapa = () => {
           ?
           <div ref={ref4} className='Mapa-detail Mapa-detail-localization4'>
             <div className='Mapa-detail-title' >
-              <p>Funtional boot Camp</p>  <IoMdCloseCircle onClick={closeDirection} size={'3rem'} />
+              <p>Sir Pieper Resto - Bar</p>  <IoMdCloseCircle onClick={closeDirection} size={'3rem'} />
             </div>
             <div> <span>icono</span> <p>Radial 19</p> </div>
-            <div> <span>Tel:</span> <p>78054922</p> </div>
-            <div> <span>googlemap</span> <a href='https://goo.gl/maps/E7GKhp8kTQkScKXWA'><p> https://goo.gl/maps/E7GKhp8kTQkScKXWA </p></a> </div>
+            <div> <span>Tel:</span> <p>77606555</p> </div>
+            <div> <span>googlemap</span> <a href='https://goo.gl/maps/AjuYgYavERBfy9ps9'><p> https://goo.gl/maps/AjuYgYavERBfy9ps9</p></a> </div>
           </div>
           : null
       }
