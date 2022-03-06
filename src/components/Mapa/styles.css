@@ -137,15 +137,16 @@
 @media (max-width: 1000px) {
     .Mapa-container{
         margin-top: 10% ;
+        height: 70vh;
     }
     .Mapa-title{
         position: absolute;
         top: -2%;
-        left: 20%;
+        left: 10%;
         color: #00554a;
         text-align: center;
     }
-    .iconLocalization1:hover,
+    /* .iconLocalization1:hover,
     .iconLocalization2:hover,
     .iconLocalization3:hover,
     .iconLocalization4:hover,
@@ -156,6 +157,20 @@
         border-radius: 15px;
         z-index: 2;
         opacity: 0;
+    } */
+    .iconLocalization1,
+    .iconLocalization2,
+    .iconLocalization3,
+    .iconLocalization4,
+    .iconLocalization5,
+    .iconLocalization6,
+    .iconLocalization7{
+        background-color: black;
+        border-radius: 15px;
+        z-index: 2;
+        opacity: 0;
+        opacity: 1;
+
     }
 
     
