@@ -2,8 +2,8 @@ import React, { useRef, useEffect } from 'react'
 import './styles.css'
 
 import { Parallax } from 'react-parallax';
-import {IoIosArrowForward} from 'react-icons/io'
-import {IoIosArrowBack} from 'react-icons/io'
+import { IoIosArrowForward } from 'react-icons/io'
+import { IoIosArrowBack } from 'react-icons/io'
 
 
 
@@ -78,22 +78,24 @@ export const Carousel = () => {
         slideshow.current.addEventListener('mouseleave', () => {
             intervaloslideshow.current = setInterval(() => {
                 next();
-            }, 5000);
+            }, 7000);
         });
     }, [])
 
     return (
         <div className='Carousel-container' >
             <div className='Carousel-slide' ref={slideshow}>
-                    <img className='Carousel-img1' src={img1} alt="beneficio1" ></img>
-                    <img className='Carousel-img2' src={img2} alt="beneficio1" ></img>
-                    <img className='Carousel-img3' src={img3} alt="beneficio1" ></img>
+                <img className='Carousel-img1' src={img1} alt="beneficio1" ></img>
+                <img className='Carousel-img2' src={img2} alt="beneficio1" ></img>
+                <img className='Carousel-img3' src={img3} alt="beneficio1" ></img>
 
 
-                    {/* for parallax but no */}
-                    {/* <div className='Carousel-img1' alt="beneficio1" ></div>
+                {/* for parallax but no */}
+                {/* <div className='Carousel-img1' alt="beneficio1" ></div>
                     <div className='Carousel-img2' alt="beneficio1" ></div>
                     <div className='Carousel-img3' alt="beneficio1" ></div> */}
+
+                
             </div>
 
             <div className='Carousel-controles'>
@@ -101,7 +103,6 @@ export const Carousel = () => {
                     <IoIosArrowBack className='Carousel-arrow'  />
                 </button>
                 <button onClick={next} className='Carousel-controles-derecha'>
-                    {/* <span>derecha</span> */}
                     <IoIosArrowForward className='Carousel-arrow'  />
                 </button>
             </div>

@@ -68,8 +68,6 @@
     color: green;
 }
 
-
-
 .Carousel-controles-izquierda{
     position: absolute;
     left: 10%;
@@ -102,9 +100,40 @@
     opacity: 0.5;
 }
 
-@media (max-width: 750px) {
-    .Carousel-controles{
-        display: none;
+@media (max-width: 500px) {
+    .Carousel-controles-izquierda{
+        position: absolute;
+        left: 5%;
+        bottom: 30%;
+        border: none;
+        background-color:transparent;
+        width: 15%;
+        display: grid;
+            place-items: center;
+        border-radius: 50%;
+    }
+    
+    .Carousel-controles-derecha{
+        position: absolute;
+        right: 5%;
+        bottom: 30%;
+        border: none;
+        background-color: transparent;
+        width: 15%;
+        display: grid;
+            place-items: center;
+        border-radius: 50%;
+    }
+
+    .Carousel-arrow{
+        width: 50px;
+        height: 50px;
+        color: green;
+    }
+    .Carousel-controles-derecha:hover,
+    .Carousel-controles-izquierda:hover{
+    background-color:transparent;
+    opacity: 1;
     }
 }
 
