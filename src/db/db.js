@@ -10,7 +10,7 @@ export default {
             {
                 "id": 2,
                 "pregunta": "¿Qué ingredientes tiene?",
-                "respuesta": "Extracto de hoja de coca organica"
+                "respuesta": "Extracto de hoja de coca orgánica"
             },
 
             {
@@ -21,7 +21,7 @@ export default {
             {
                 "id": 4,
                 "pregunta": "¿Cuántas puedo consumir en el día?",
-                "respuesta": "Se recomienda consumir  2 unidades al día. Se han registado consumos de hasta 10 unidades al día."
+                "respuesta": "Se recomienda consumir 2 unidades al día. Se han registrado consumos de hasta 10 unidades al día."
             },
             {
                 "id": 5,
@@ -32,18 +32,17 @@ export default {
             {
                 "id": 6,
                 "pregunta": "¿Es apto para embarazadas?",
-                "respuesta": ""
+                "respuesta": "Ya que no se realizaron los análisis correspondientes, No se recomienda para embarazadas"
             },
             {
                 "id": 7,
-                "pregunta": "¿Puede ser utilizado para personas con ",
-                "respuesta": "Si. La hoja de coca regula el metabolismo de hidratos de carbono, mejorando el control de la glucemia. Además reduce el apetito, lo que favorece el control del peso , que a menudo es una factor quedebe ser controlado en las personas con dibetes de tipo 2"
+                "pregunta": "¿Puede ser utilizado para personas con diabetes tipo 2? ",
+                "respuesta": "Sí. La hoja de coca regula el metabolismo de hidratos de carbono, mejorando el control de la glucemia. Además, reduce el apetito, lo que favorece el control del peso, que a menudo es un factor que debe ser controlado en las personas con diabetes de tipo 2"
             },
-
             {
                 "id": 8,
                 "pregunta": "¿Qué duración tiene?",
-                "respuesta": " Alrededor de 2 a 4 horas."
+                "respuesta": "Alrededor de 2 a 4 horas."
             },
             {
                 "id": 9,
@@ -57,13 +56,13 @@ export default {
             },
             {
                 "id": 11,
-                "pregunta": "¿En que parte de la boca se coloca?",
-                "respuesta": "Se debe poner encontacto con la mucosa bucal, de preferencia entre la arcada dental inferior y el labio inferior. Puede ser usado de forma sublingual , con una duración menor."
+                "pregunta": "¿En qué parte de la boca se coloca?",
+                "respuesta": "Se debe poner en contacto con la mucosa bucal, de preferencia entre la arcada dental inferior y el labio inferior. Puede ser usado de forma sublingual, con una duración menor."
             },
             {
                 "id": 12,
                 "pregunta": "¿Tienen precios al por mayor?",
-                "respuesta": "Si, para mayor información ponerse en contacto con "
+                "respuesta": "Si, para mayor información ponerse en contacto con Kukacorp S.R.L. 67983109 "
             }
         ]
 
