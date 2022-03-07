@@ -80,6 +80,7 @@ export const Introduction = () => {
             }, 30);
         }
     }
+    
 
 
     // useEffect(() => {
@@ -109,7 +110,7 @@ export const Introduction = () => {
                 <Parallax bgImageStyle={{ height: '100%', width: '100%', minWidth: '410px' }} className='Introduction-container-bg1' bgImage={bg} strength={150}>
                 </Parallax>
 
-                <Parallax
+                {/* <Parallax
                     bgImageStyle={{ height: '100%', width: '100%', minWidth: '410px' }}
                     className='Introduction-container-bg1'
                     bgImage={bg2}
@@ -120,7 +121,7 @@ export const Introduction = () => {
                     <img src={button2} />
                     <img src={button3} />
                     <img src={button4} />
-                </Parallax>
+                </Parallax> */}
 
                 <Parallax
                     bgImageStyle={{ height: '100%', width: '100%', minWidth: '410px' }}
