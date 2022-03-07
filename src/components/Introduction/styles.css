@@ -2,16 +2,72 @@
     position: relative;
     width: 100%;
     height: 90vh;
+    overflow: hidden;
 
 }
 
 .Introduction-container{
     width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+}
+.Introduction-container-bg1{
+    width: 100%;
+    min-width: 100%;
     /* height: 85vh; */
     height: 90vh;
     /* min-height: 1700px; */
-    
 }
+
+/* controles */
+
+.Introduction-arrow{
+    width: 100px;
+    height: 100px;
+    color: white;
+}
+
+.Introduction-controles-izquierda{
+    position: absolute;
+    left: 10%;
+    bottom: 40%;
+    border: none;
+    background-color: transparent;
+    width: 100px;
+    display: grid;
+        place-items: center;
+    border-radius: 50%;
+}
+
+.Introduction-controles-derecha{
+    position: absolute;
+    right: 10%;
+    bottom: 40%;
+    border: none;
+    background-color: transparent;
+    width: 100px;
+    border-radius: 50%;
+    display: grid;
+        place-items: center;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .Introduction-image{
     position: absolute;
