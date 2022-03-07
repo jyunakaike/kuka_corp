@@ -1,4 +1,4 @@
-import React , {useRef, useEffect} from 'react'
+import React, { useRef, useEffect } from 'react'
 import './styles.css'
 
 import { Parallax } from 'react-parallax';
@@ -10,9 +10,26 @@ import bg from '../../../assets/image/IntroBackground.png'
 import bg2 from '../../../assets/image/IntroBackgroundcarousel.jpg'
 
 
+// buton
+import button1 from '../../../assets/logos/3000botom.jpg';
+import button2 from '../../../assets/logos/abuelacoca.jpg';
+import button3 from '../../../assets/logos/nutrientes.jpg';
+import button4 from '../../../assets/logos/espiritualidad.jpg';
+
+// Logo
+
+import Logo1 from '../../../assets/logos/3000logo.png';
+
+
+// detail
+import Intro3k from '../../../assets/image/Intro3000.png'
+import IntroAbuela from '../../../assets/image/abuelacoca.png'
+import IntroNutricion from '../../../assets/image/Intronutricion.png'
+import IntroEspiritual from '../../../assets/image/Introespiritual.png'
+
+
 export const Introduction = () => {
     const slideshow = useRef(null);
-    const intervaloslideshow = useRef(null);
 
 
     const next = () => {
@@ -41,7 +58,7 @@ export const Introduction = () => {
 
     }
 
-    
+
     const prev = () => {
         // console.log('anterior');
         // para regresar al ultimo elemento semanda del ultimo al primero 
@@ -64,7 +81,7 @@ export const Introduction = () => {
         }
     }
 
-    
+
     // useEffect(() => {
     //     // ese code lo hace para que recorra
     //     // intervaloslideshow.current = setInterval(() => {
@@ -92,36 +109,86 @@ export const Introduction = () => {
                 <Parallax bgImageStyle={{ height: '100%', width: '100%', minWidth: '410px' }} className='Introduction-container-bg1' bgImage={bg} strength={150}>
                 </Parallax>
 
-                <Parallax bgImageStyle={{ height: '100%', width: '100%', minWidth: '410px' }} className='Introduction-container-bg1' bgImage={bg2} strength={150}>
+                <Parallax
+                    bgImageStyle={{ height: '100%', width: '100%', minWidth: '410px' }}
+                    className='Introduction-container-bg1'
+                    bgImage={bg2}
+                    strength={150}
+                    contentClassName={'Intro-button-container'}
+                >
+                    <img src={button1} />
+                    <img src={button2} />
+                    <img src={button3} />
+                    <img src={button4} />
                 </Parallax>
 
-                <Parallax bgImageStyle={{ height: '100%', width: '100%', minWidth: '410px' }} className='Introduction-container-bg1' bgImage={bg2} strength={150}>
+                <Parallax
+                    bgImageStyle={{ height: '100%', width: '100%', minWidth: '410px' }}
+                    className='Introduction-container-bg1'
+                    bgImage={bg2}
+                    strength={150}
+                    contentClassName={'Intro-3000-container'}
+                >
+                    {/* <img className='Intro-3000-logo' src={Logo1} />
+                    <div className='Intro-3000-detail' >
+                        A 3000 m.s.n.m. crece la planta de coca, cultivada tradicionalmente hace más de 4500 años. Nuestra misión es perdurar el uso de esta planta medicinal milenaria, ofreciéndola en una presentación innovadora, limpia y práctica.
+                        KUKA activa tus sentidos, te reconecta contigo mismo y te permite alcanzar tu maximo potencial.
+                        Nuestros procesos de Elaboración nos entregan un producto inocuo, libre de microorganismos y agroquímicos.
+                    </div> */}
+                    <img className='Intro-3000-detail' src={Intro3k} />
+
+
+
                 </Parallax>
 
-                <Parallax bgImageStyle={{ height: '100%', width: '100%', minWidth: '410px' }} className='Introduction-container-bg1' bgImage={bg2} strength={150}>
+                <Parallax 
+                    bgImageStyle={{ height: '100%', width: '100%', minWidth: '410px' }}    
+                    className='Introduction-container-bg1' 
+                    bgImage={bg2} 
+                    strength={150}
+                    contentClassName={'Intro-3000-container'}
+                >
+                    <img className='Intro-3000-detail' src={IntroAbuela} />
+
+
                 </Parallax>
 
-                <Parallax bgImageStyle={{ height: '100%', width: '100%', minWidth: '410px' }} className='Introduction-container-bg1' bgImage={bg2} strength={150}>
+                <Parallax 
+                    bgImageStyle={{ height: '100%', width: '100%', minWidth: '410px' }} 
+                    className='Introduction-container-bg1' 
+                    bgImage={bg2} 
+                    strength={150}  
+                    contentClassName={'Intro-3000-container'}>
+                <img className='Intro-3000-detail' src={IntroNutricion} />
+                
+                
                 </Parallax>
 
-                <Parallax bgImageStyle={{ height: '100%', width: '100%', minWidth: '410px' }} className='Introduction-container-bg1' bgImage={bg2} strength={150}>
+                <Parallax 
+                    bgImageStyle={{ height: '100%', width: '100%', minWidth: '410px' }} 
+                    className='Introduction-container-bg1' 
+                    bgImage={bg2} 
+                    strength={150} 
+                    contentClassName={'Intro-3000-container'}
+                >
+                <img className='Intro-3000-detail' src={IntroEspiritual} />
                 </Parallax>
 
                 {/* <Parallax bgImageStyle={{ height: '100%', width: '100%', minWidth: '410px' }} className='Introduction-container-bg1' bgImage={bg} strength={150}>
                 </Parallax> */}
-                
+
             </div>
 
 
-             {/* <Parallax bgImageStyle={{ height: '100%', width: '100%', minWidth: '410px' }} className='Introduction-container' bgImage={bg} strength={150}>
+            {/* <Parallax bgImageStyle={{ height: '100%', width: '100%', minWidth: '410px' }} className='Introduction-container' bgImage={bg} strength={150}>
             </Parallax> */}
 
             <div className='Introduction-controles'>
                 <button onClick={prev} className='Introduction-controles-izquierda'>
-                    <IoIosArrowBack className='Introduction-arrow'  />
+                    <IoIosArrowBack className='Introduction-arrow' />
                 </button>
                 <button onClick={next} className='Introduction-controles-derecha'>
-                    <IoIosArrowForward className='Introduction-arrow'  />
+                    <IoIosArrowForward className='Introduction-arrow' />
                 </button>
             </div>
 

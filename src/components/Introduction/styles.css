@@ -18,7 +18,89 @@
     /* height: 85vh; */
     height: 90vh;
     /* min-height: 1700px; */
+    position: relative;
 }
+
+/* button */
+
+.Intro-button-container
+{
+    left: 20%;
+    top: 40%;
+    width: 60%;
+    min-width:60% ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+    overflow: hidden;
+    /* height: 20vh; */
+    /* display: grid; */
+    /* place-items: center; */
+    /* margin: 18% 0%; */
+    background-color: red;
+    
+}
+.Intro-3000-container{
+    left: 20%;
+    top: 5%;
+    width: 60%;
+    min-width:60% ;
+    height: 65%;
+    position: relative;
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+    overflow: hidden; */
+    /* height: 20vh; */
+    /* display: grid; */
+    /* place-items: center; */
+    /* margin: 18% 0%; */
+    /* background-color: red; */
+
+
+}
+/* .Intro-3000-logo{
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    width: 30%;
+    z-index: 2;
+}
+.Intro-3000-detail{
+    position: absolute;
+    top:13%;
+    right: 10%;
+    width: 50%;
+    height: 80%;
+    border-radius: 50%;
+    background-color: lightblue;
+    padding: 10% 8%;
+    display: flex;
+        justify-content: center;
+        align-items: space-around;
+    text-align: center;    
+    font-size: 1.5rem ;
+    color: green;
+} */
+
+.Intro-3000-detail {
+    position: absolute;
+    top: 4%;
+    left: 10%;
+    width: 70%;
+    height: 95%;
+    min-width: 70%;
+    max-width: 70%;
+
+    z-index: 2;
+
+
+}
+
 
 /* controles */
 
@@ -52,6 +134,8 @@
         place-items: center;
     border-radius: 50%;
 }
+
+
 
 
 
