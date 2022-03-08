@@ -159,8 +159,8 @@ export const Introduction = () => {
                     className='Introduction-container-bg1' 
                     bgImage={bg2} 
                     strength={150}  
-                    contentClassName={'Intro-3000-container'}>
-                <img className='Intro-3000-detail' src={IntroNutricion} />
+                    contentClassName={'Intro-nutricion-container'}>
+                <img className='Intro-nutricion-detail' src={IntroNutricion} />
                 
                 
                 </Parallax>
