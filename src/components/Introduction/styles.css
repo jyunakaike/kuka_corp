@@ -42,6 +42,8 @@
     background-color: red;
     
 }
+
+
 .Intro-3000-container{
     left: 20%;
     top: 5%;
@@ -62,23 +64,35 @@
     /* background-color: red; */
 }
 
+.Intro-3000-detail {
+    position: absolute;
+    top: 4%;
+    left: 12%;
+    width: 70%;
+    height: 95%;
+    min-width: 70%;
+    max-width: 70%;
+    z-index: 2;
+}
+
 .Intro-nutricion-container{
     left: 20%;
-    top: 5%;
+    top: 4%;
     width: 60%;
     min-width:60% ;
     height: 65%;
     position: relative;
+    /* background-color: red; */
 }
 
 .Intro-nutricion-detail{
     position: absolute;
     top: 4%;
     left: 20%;
-    width: 70%;
-    height: 95%;
+    width: 80%;
+    height: 100%;
     min-width: 70%;
-    max-width: 70%;
+    max-width: 0%;
     z-index: 2;
 }
 
@@ -108,19 +122,30 @@
     color: green;
 } */
 
-.Intro-3000-detail {
-    position: absolute;
-    top: 4%;
-    left: 10%;
-    width: 70%;
-    height: 95%;
-    min-width: 70%;
-    max-width: 70%;
-
-    z-index: 2;
 
 
+
+.Intro-3000-container{
+    left: 20%;
+    top: 5%;
+    width: 60%;
+    min-width:60% ;
+    height: 65%;
+    position: relative;
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+    overflow: hidden; */
+    /* height: 20vh; */
+    /* display: grid; */
+    /* place-items: center; */
+    /* margin: 18% 0%; */
+    /* background-color: red; */
 }
+
+
 
 
 /* controles */
@@ -133,7 +158,7 @@
 
 .Introduction-controles-izquierda{
     position: absolute;
-    left: 10%;
+    left: 5%;
     bottom: 50%;
     border: none;
     background-color: transparent;
@@ -145,7 +170,7 @@
 
 .Introduction-controles-derecha{
     position: absolute;
-    right: 10%;
+    right: 5%;
     bottom: 50%;
     border: none;
     background-color: transparent;
@@ -230,6 +255,75 @@
         height: 90vh;
         /* min-height: 1700px; */
     }
+
+    .Intro-3000-container{
+        left: 5%;
+        top: 15%;
+        width: 100%;
+        /* min-width:60% ; */
+        height: 50%;
+        position: relative;
+        /* background-color: red; */
+    }
+    .Intro-nutricion-container{
+        left:-5%;
+        top: 4%;
+        width: 100%;
+        /* min-width:60% ; */
+        height: 60%;
+        position: relative;
+        /* background-color: red; */
+    }
+
+    .Intro-3000-detail {
+        position: absolute;
+        top: 4%;
+        left: 12%;
+        /* min-width: 70%; */
+        /* max-width: 70%; */
+        z-index: 2;
+    }
+
+
+
+
+
+
+
+
+    .Introduction-arrow{
+        width: 50px;
+        height: 50px;
+        color: lightgreen;
+    }
+
+    .Introduction-controles-izquierda{
+        position: absolute;
+        left: -1%;
+        bottom: 55%;
+        border: none;
+        background-color: transparent;
+        width: 100px;
+        display: grid;
+            place-items: center;
+        border-radius: 50%;
+    }
+    
+    .Introduction-controles-derecha{
+        position: absolute;
+        right: -4%;
+        bottom: 55%;
+        border: none;
+        background-color: transparent;
+        width: 100px;
+        border-radius: 50%;
+        display: grid;
+            place-items: center;
+        border-radius: 50%;
+    }
+
+
+
 
     
 }

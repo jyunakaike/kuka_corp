@@ -80,7 +80,7 @@ export const Introduction = () => {
             }, 30);
         }
     }
-    
+
 
 
     // useEffect(() => {
@@ -107,7 +107,7 @@ export const Introduction = () => {
         <div className="Introduction-allContainer">
 
             <div className='Introduction-container' ref={slideshow}>
-                <Parallax bgImageStyle={{ height: '100%', width: '100%', minWidth: '410px' }} className='Introduction-container-bg1' bgImage={bg} strength={150}>
+                <Parallax bgImageStyle={{ height: '100%', width: '100%', minWidth: '100px' }} className='Introduction-container-bg1' bgImage={bg} strength={150}>
                 </Parallax>
 
                 {/* <Parallax
@@ -130,22 +130,16 @@ export const Introduction = () => {
                     strength={150}
                     contentClassName={'Intro-3000-container'}
                 >
-                    {/* <img className='Intro-3000-logo' src={Logo1} />
-                    <div className='Intro-3000-detail' >
-                        A 3000 m.s.n.m. crece la planta de coca, cultivada tradicionalmente hace más de 4500 años. Nuestra misión es perdurar el uso de esta planta medicinal milenaria, ofreciéndola en una presentación innovadora, limpia y práctica.
-                        KUKA activa tus sentidos, te reconecta contigo mismo y te permite alcanzar tu maximo potencial.
-                        Nuestros procesos de Elaboración nos entregan un producto inocuo, libre de microorganismos y agroquímicos.
-                    </div> */}
                     <img className='Intro-3000-detail' src={Intro3k} />
 
 
 
                 </Parallax>
 
-                <Parallax 
-                    bgImageStyle={{ height: '100%', width: '100%', minWidth: '410px' }}    
-                    className='Introduction-container-bg1' 
-                    bgImage={bg2} 
+                <Parallax
+                    bgImageStyle={{ height: '100%', width: '100%', minWidth: '410px' }}
+                    className='Introduction-container-bg1'
+                    bgImage={bg2}
                     strength={150}
                     contentClassName={'Intro-3000-container'}
                 >
@@ -154,25 +148,25 @@ export const Introduction = () => {
 
                 </Parallax>
 
-                <Parallax 
-                    bgImageStyle={{ height: '100%', width: '100%', minWidth: '410px' }} 
-                    className='Introduction-container-bg1' 
-                    bgImage={bg2} 
-                    strength={150}  
+                <Parallax
+                    bgImageStyle={{ height: '100%', width: '100%', minWidth: '410px' }}
+                    className='Introduction-container-bg1'
+                    bgImage={bg2}
+                    strength={150}
                     contentClassName={'Intro-nutricion-container'}>
-                <img className='Intro-nutricion-detail' src={IntroNutricion} />
-                
-                
+                    <img className='Intro-nutricion-detail' src={IntroNutricion} />
+
+
                 </Parallax>
 
-                <Parallax 
-                    bgImageStyle={{ height: '100%', width: '100%', minWidth: '410px' }} 
-                    className='Introduction-container-bg1' 
-                    bgImage={bg2} 
-                    strength={150} 
+                <Parallax
+                    bgImageStyle={{ height: '100%', width: '100%', minWidth: '410px' }}
+                    className='Introduction-container-bg1'
+                    bgImage={bg2}
+                    strength={150}
                     contentClassName={'Intro-3000-container'}
                 >
-                <img className='Intro-3000-detail' src={IntroEspiritual} />
+                    <img className='Intro-3000-detail' src={IntroEspiritual} />
                 </Parallax>
 
                 {/* <Parallax bgImageStyle={{ height: '100%', width: '100%', minWidth: '410px' }} className='Introduction-container-bg1' bgImage={bg} strength={150}>
