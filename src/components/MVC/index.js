@@ -3,12 +3,14 @@ import './styles.css'
 
 import Logo from '../../../assets/logos/MVCeye.png';
 import Nutri from '../../../assets/image/nutricionalinfo.png'
+import Nutri2 from '../../../assets/image/nutricionalinfo3.png'
+
 import hand from '../../../assets/image/hand.png'
 
-import  {IoIosArrowDown}  from 'react-icons/io'
+import { IoIosArrowDown } from 'react-icons/io'
 
 // hook
-import {useMoveSection} from '../../hook/useMoveSection'
+import { useMoveSection } from '../../hook/useMoveSection'
 
 export const MVC = () => {
     const element = useRef(null)
@@ -32,7 +34,7 @@ export const MVC = () => {
 
     return (
         <div className='MVC-container-background' id='MVC'>
-            <span><IoIosArrowDown onClick={()=>{useMoveSection(MVCid)}} className='MVC-container-arrowDown' /></span>
+            <span><IoIosArrowDown onClick={() => { useMoveSection(MVCid) }} className='MVC-container-arrowDown' /></span>
             <div ref={element} className='MVC-cards-container'>
                 {
                     show &&
@@ -68,8 +70,71 @@ export const MVC = () => {
                             <p>EXTRACTO DE HOJA DE COCA ORGÁNICA.</p>
                         </div>
                         <div className='MVC-detail-title'>
-                            <h1>INFORMACIÓN NUTRICIONAL</h1>
-                            < img src={Nutri} />
+                            <h1>Información Nutricional</h1>
+                            {/* < img src={Nutri} /> */}
+                            < img src={Nutri2} className='MVC-detail-torquel-image'  />
+                            {/* < div  className='MVC-detail-torquel-image'> </div> */}
+                            {/* <div className='MVC-detail-torquel' >
+                                <div className='MVC-detail-torquel-container'>
+                                    <div>Energía (Kcal)</div>
+                                    <div>418 Kcal</div>
+                                </div>
+                                <div className='MVC-detail-torquel-container'>
+                                    <div>Grasa Total</div>
+                                    <div>0g</div>
+                                </div>
+                                    
+                                <div className='MVC-detail-torquel-container'>
+                                    <div>Colesterol</div>
+                                    <div>0g</div>
+                                </div>
+                                <div className='MVC-detail-torquel-container'>
+                                    <div>Sodio</div>
+                                    <div>0g</div>
+                                </div>
+                                <div className='MVC-detail-torquel-container'>
+                                    <div>Carbohidratos Totales </div>
+                                    <div>418g</div>
+                                </div>
+                                <div className='MVC-detail-torquel-container'>
+                                    <div>Fibra</div>
+                                    <div>3g</div>
+                                </div>
+                                <div className='MVC-detail-torquel-container'>
+                                    <div>Proteína</div>
+                                    <div>10g</div>
+                                </div>
+                                <div className='MVC-detail-torquel-container'>
+                                    <div>Calcio</div>
+                                    <div>450mg</div>
+                                </div>
+                                <div className='MVC-detail-torquel-container'>
+                                    <div>Hierro</div>
+                                    <div>3.43mg</div>
+                                </div>
+                            </div> */}
+
+                            {/* <div className='MVC-detail-torquel'>
+                                <div>Energía (Kcal) </div>
+                                <div>418 </div>
+                                <div>Grasa Total</div>
+                                <div>0g</div>
+                                <div>Colesterol </div>
+                                <div> 0g</div>
+                                <div>Sodio</div>
+                                <div>0g</div>
+                                <div>Carbohigratos Totales </div>
+                                <div>418g </div>
+                                <div>Fibra</div>
+                                <div>3g</div>
+                                <div>Proteína</div>
+                                <div>10g</div>
+                                <div>Calcio</div>
+                                <div>450mg</div>
+                                <div>Hierro</div>
+                                <div>3.43mg</div>
+                            </div> */}
+
                         </div>
                     </React.Fragment>
                 }
