@@ -29,8 +29,8 @@ import IntroEspiritual from '../../../assets/image/Introespiritual.png'
 
 export const Introduction = () => {
     const slideshow = useRef(null);
-    
-    
+
+
     const next = () => {
         if (slideshow.current.children.length > 0) {
             // obtenenemos el primer elemento del slideshow
@@ -104,7 +104,7 @@ export const Introduction = () => {
             slideshow.current.style.transform = `translateX(-${slideSize}px)`;
 
             const transition = () => {
-                
+
 
                 // que no tenga transicion 
                 slideshow.current.style.transition = 'none';
@@ -168,7 +168,7 @@ export const Introduction = () => {
             // Establecemos la transicionpara el slideshow
             slideshow.current.style.transition = `1000ms ease-out all`;
 
-            const slideSize = (slideshow.current.children[0].offsetWidth) *4;
+            const slideSize = (slideshow.current.children[0].offsetWidth) * 4;
             // Movemos el siguienteSlideshow 
 
             let controles = document.getElementById("controles").style;
@@ -248,10 +248,10 @@ export const Introduction = () => {
                     strength={150}
                     contentClassName={'Intro-button-container'}
                 >
-                    <img onClick={element0} src={button1} />
-                    <img onClick={element1} src={button2} />
-                    <img onClick={element2} src={button3} />
-                    <img onClick={element3} src={button4} />
+                    <div className='Intro-button'> <img onClick={element0} src={button1} /> </div>
+                    <div className='Intro-button'> <img onClick={element1} src={button2} /> </div>
+                    <div className='Intro-button'> <img onClick={element2} src={button3} /></div>
+                    <div className='Intro-button'> <img onClick={element3} src={button4} /> </div>
                 </Parallax>
 
                 <Parallax

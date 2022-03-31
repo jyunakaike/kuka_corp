@@ -22,9 +22,24 @@
     position: relative;
 }
 
-.Intro-button-container img {
+/* .Intro-button-container img {
+    border-radius: 50%;
+} */
+
+.Intro-button{
+    /* width: 40%; */
+    
+}
+.Intro-button :hover{
+    width: 120%;
     border-radius: 50%;
 }
+
+.Intro-button img{
+    border-radius: 50%;
+}
+
+
 
 
 .Introduction-container-bg1 {
@@ -319,10 +334,23 @@
         border-radius: 50%;
     }
 
-    .Intro-button-container img {
+    /* .Intro-button-container img {
+        width: 40%;
+        border-radius: 50%;
+    } */
+    .Intro-button{
         width: 40%;
         border-radius: 50%;
     }
+    .Intro-button :hover{
+        width: 60%;
+        border-radius: 0%;
+    }
+
+    /* .Intro-button-container img:hover {
+        width: 60%;
+
+    } */
 }
 
 @media (max-width: 350px) {
