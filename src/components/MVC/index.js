@@ -53,7 +53,7 @@ export const MVC = () => {
                         <div className='MVC-card'>
                             <img src={Logo}></img>
                             <h1>CONTACTO</h1>
-                            <p><span>Kukacorp S.R.L.&nbsp;</span> 67983109</p>
+                            <p><span>Kukacorp S.R.L. <br /></span> 67983109</p>
                         </div>
                     </React.Fragment>
                 }
@@ -64,7 +64,7 @@ export const MVC = () => {
                     show &&
                     <React.Fragment>
                         <div className='MVC-detail-title'>
-                            <h1>QUÉ ES?</h1>
+                            <h1>¿QUÉ ES?</h1>
                             <p>KUKA ES UN SUPLEMENTO A BASE DE EXTRACTO DE LA HOJA DE COCA ORGÁNICA.</p>
                             <h1>INGREDIENTES</h1>
                             <p>EXTRACTO DE HOJA DE COCA ORGÁNICA.</p>

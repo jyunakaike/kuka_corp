@@ -3,7 +3,7 @@ import './styles.css'
 
 import {IoMdCloseCircle} from 'react-icons/io';
 
-import Qr from '../../../../assets/image/Qr.png'
+import Qr from '../../../../assets/image/qr.jpeg'
 
 export const ModalContainer = ({ setOpenModal }) => {
 

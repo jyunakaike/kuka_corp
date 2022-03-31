@@ -17,7 +17,6 @@ import button3 from '../../../assets/logos/nutrientes.jpg';
 import button4 from '../../../assets/logos/espiritualidad.jpg';
 
 // Logo
-
 import Logo1 from '../../../assets/logos/3000logo.png';
 
 
@@ -30,8 +29,8 @@ import IntroEspiritual from '../../../assets/image/Introespiritual.png'
 
 export const Introduction = () => {
     const slideshow = useRef(null);
-
-
+    
+    
     const next = () => {
         if (slideshow.current.children.length > 0) {
             // obtenenemos el primer elemento del slideshow
@@ -40,6 +39,7 @@ export const Introduction = () => {
             slideshow.current.style.transition = `1000ms ease-out all`;
 
             const slideSize = slideshow.current.children[0].offsetWidth;
+            // console.log(slideSize)
             // Movemos el siguienteSlideshow 
             slideshow.current.style.transform = `translateX(-${slideSize}px)`;
 
@@ -55,7 +55,142 @@ export const Introduction = () => {
             }
             slideshow.current.addEventListener('transitionend', transition);
         }
+    }
 
+    const element0 = () => {
+        if (slideshow.current.children.length > 0) {
+            // obtenenemos el primer elemento del slideshow
+            const primerElemento = slideshow.current.children[0];
+            // Establecemos la transicionpara el slideshow
+            slideshow.current.style.transition = `1000ms ease-out all`;
+
+            const slideSize = slideshow.current.children[0].offsetWidth;
+            // Movemos el siguienteSlideshow 
+
+            let controles = document.getElementById("controles").style;
+            controles.display = "none";
+            slideshow.current.style.transform = `translateX(-${slideSize}px)`;
+
+            const transition = () => {
+                // que no tenga transicion 
+                slideshow.current.style.transition = 'none';
+                // regresarlo al valor de 0
+                slideshow.current.style.transform = 'translateX(0)';
+                // tomamos el primer elemento y lo mandamos al final 
+                slideshow.current.appendChild(primerElemento);
+                controles.display = "";
+
+                slideshow.current.removeEventListener('transitionend', transition)
+            }
+            slideshow.current.addEventListener('transitionend', transition);
+        }
+    }
+
+
+    const element1 = () => {
+        if (slideshow.current.children.length > 0) {
+            // obtenenemos el primer elemento del slideshow
+
+            const primerElemento = slideshow.current.children[0];
+            const segundoElemento = slideshow.current.children[1];
+            // Establecemos la transicionpara el slideshow
+            slideshow.current.style.transition = `1000ms ease-out all`;
+
+            const slideSize = (slideshow.current.children[0].offsetWidth) * 2;
+            // Movemos el siguienteSlideshow 
+            let controles = document.getElementById("controles").style;
+            controles.display = "none";
+
+            slideshow.current.style.transform = `translateX(-${slideSize}px)`;
+
+            const transition = () => {
+                
+
+                // que no tenga transicion 
+                slideshow.current.style.transition = 'none';
+                // regresarlo al valor de 0
+                slideshow.current.style.transform = 'translateX(0)';
+
+                // tomamos el primer elemento y lo mandamos al final 
+                slideshow.current.appendChild(primerElemento);
+                slideshow.current.appendChild(segundoElemento);
+
+                controles.display = "";
+                slideshow.current.removeEventListener('transitionend', transition)
+            }
+            slideshow.current.addEventListener('transitionend', transition);
+        }
+    }
+    const element2 = () => {
+        if (slideshow.current.children.length > 0) {
+            // obtenenemos el primer elemento del slideshow
+            const primerElemento = slideshow.current.children[0];
+            const segundoElemento = slideshow.current.children[1];
+            const tercerElemento = slideshow.current.children[2];
+            // Establecemos la transicionpara el slideshow
+            slideshow.current.style.transition = `1000ms ease-out all`;
+
+            const slideSize = (slideshow.current.children[0].offsetWidth) * 3;
+            // Movemos el siguienteSlideshow 
+            // console.log(slideSize)
+
+            let controles = document.getElementById("controles").style;
+            controles.display = "none";
+
+            slideshow.current.style.transform = `translateX(-${slideSize}px)`;
+
+            const transition = () => {
+                // que no tenga transicion 
+                slideshow.current.style.transition = 'none';
+                // regresarlo al valor de 0
+                slideshow.current.style.transform = 'translateX(0)';
+
+                // tomamos el primer elemento y lo mandamos al final 
+                slideshow.current.appendChild(primerElemento);
+                slideshow.current.appendChild(segundoElemento);
+                slideshow.current.appendChild(tercerElemento);
+
+                controles.display = "";
+
+                slideshow.current.removeEventListener('transitionend', transition)
+            }
+            slideshow.current.addEventListener('transitionend', transition);
+        }
+    }
+
+    const element3 = () => {
+        if (slideshow.current.children.length > 0) {
+            // obtenenemos el primer elemento del slideshow
+            const primerElemento = slideshow.current.children[0];
+            const segundoElemento = slideshow.current.children[1];
+            const tercerElemento = slideshow.current.children[2];
+            const cuartoElemento = slideshow.current.children[3];
+            // Establecemos la transicionpara el slideshow
+            slideshow.current.style.transition = `1000ms ease-out all`;
+
+            const slideSize = (slideshow.current.children[0].offsetWidth) *4;
+            // Movemos el siguienteSlideshow 
+
+            let controles = document.getElementById("controles").style;
+            controles.display = "none";
+            slideshow.current.style.transform = `translateX(-${slideSize}px)`;
+
+            const transition = () => {
+                // que no tenga transicion 
+                slideshow.current.style.transition = 'none';
+                // regresarlo al valor de 0
+                slideshow.current.style.transform = 'translateX(0)';
+
+                // tomamos el primer elemento y lo mandamos al final 
+                slideshow.current.appendChild(primerElemento);
+                slideshow.current.appendChild(segundoElemento);
+                slideshow.current.appendChild(tercerElemento);
+                slideshow.current.appendChild(cuartoElemento);
+                controles.display = "";
+                slideshow.current.removeEventListener('transitionend', transition)
+            }
+            slideshow.current.addEventListener('transitionend', transition);
+        }
     }
 
 
@@ -81,8 +216,6 @@ export const Introduction = () => {
         }
     }
 
-
-
     // useEffect(() => {
     //     // ese code lo hace para que recorra
     //     // intervaloslideshow.current = setInterval(() => {
@@ -101,8 +234,6 @@ export const Introduction = () => {
     //     // });
     // }, [])
 
-
-
     return (
         <div className="Introduction-allContainer">
 
@@ -110,18 +241,18 @@ export const Introduction = () => {
                 <Parallax bgImageStyle={{ height: '100%', width: '100%', minWidth: '100px' }} className='Introduction-container-bg1' bgImage={bg} strength={150}>
                 </Parallax>
 
-                {/* <Parallax
+                <Parallax
                     bgImageStyle={{ height: '100%', width: '100%', minWidth: '410px' }}
-                    className='Introduction-container-bg1'
+                    className='Introduction-container-bg0'
                     bgImage={bg2}
                     strength={150}
                     contentClassName={'Intro-button-container'}
                 >
-                    <img src={button1} />
-                    <img src={button2} />
-                    <img src={button3} />
-                    <img src={button4} />
-                </Parallax> */}
+                    <img onClick={element0} src={button1} />
+                    <img onClick={element1} src={button2} />
+                    <img onClick={element2} src={button3} />
+                    <img onClick={element3} src={button4} />
+                </Parallax>
 
                 <Parallax
                     bgImageStyle={{ height: '100%', width: '100%', minWidth: '410px' }}
@@ -131,9 +262,6 @@ export const Introduction = () => {
                     contentClassName={'Intro-3000-container'}
                 >
                     <img className='Intro-3000-detail' src={Intro3k} />
-
-
-
                 </Parallax>
 
                 <Parallax
@@ -144,8 +272,6 @@ export const Introduction = () => {
                     contentClassName={'Intro-3000-container'}
                 >
                     <img className='Intro-3000-detail' src={IntroAbuela} />
-
-
                 </Parallax>
 
                 <Parallax
@@ -155,8 +281,6 @@ export const Introduction = () => {
                     strength={150}
                     contentClassName={'Intro-nutricion-container'}>
                     <img className='Intro-nutricion-detail' src={IntroNutricion} />
-
-
                 </Parallax>
 
                 <Parallax
@@ -166,6 +290,7 @@ export const Introduction = () => {
                     strength={150}
                     contentClassName={'Intro-3000-container'}
                 >
+                    5
                     <img className='Intro-3000-detail' src={IntroEspiritual} />
                 </Parallax>
 
@@ -178,7 +303,7 @@ export const Introduction = () => {
             {/* <Parallax bgImageStyle={{ height: '100%', width: '100%', minWidth: '410px' }} className='Introduction-container' bgImage={bg} strength={150}>
             </Parallax> */}
 
-            <div className='Introduction-controles'>
+            <div className='Introduction-controles' id='controles' >
                 <button onClick={prev} className='Introduction-controles-izquierda'>
                     <IoIosArrowBack className='Introduction-arrow' />
                 </button>

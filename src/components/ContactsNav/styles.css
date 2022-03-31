@@ -17,6 +17,9 @@
 .ContactsNav p {
     margin-bottom: 50px;
 }
+.ContactsNav a {
+    color: rgb(255, 123, 0);
+}
 
 @media (max-width: 1000px) {
     .ContactsNav{

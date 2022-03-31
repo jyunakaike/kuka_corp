@@ -18,7 +18,7 @@ header{
     height: 100%;
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 45px;
 
     cursor: pointer;
 }
@@ -64,7 +64,6 @@ header{
         align-items:center;
 }
 
-
 .KukaIntro-Menu{
     display:none; 
     position: absolute;
@@ -80,8 +79,10 @@ header{
 }
 
 .KukaIntro-Menu h2{
-    margin-bottom: 5%;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 3.5%;
     border-bottom: 1px solid black;
+    
 }
 
 .KukaIntro:hover .KukaIntro-Menu ,

@@ -57,7 +57,9 @@ export const Nav = ({openModalQR}) => {
           </div>
 
           <div className='KukaFAQS' > <h2 onClick={() => { useMoveSection(FAQS) }}>FAQS</h2> </div>
+
           <div className='KukaPuntosVenta'> <h2 onClick={() => { useMoveSection(MAPA) }}>PUNTOS DE VENTA</h2> </div>
+
           <div onClick={openModalQR} className="header-whatsapp" > <h2>WHATSAPP</h2> </div>
         </div>
       </header>

@@ -65,6 +65,7 @@
 .Carousel-arrow{
     width: 100px;
     height: 100px;
+    /* preguntar */
     color: green;
 }
 
@@ -78,7 +79,6 @@
     display: grid;
         place-items: center;
     border-radius: 50%;
-
 }
 
 .Carousel-controles-derecha{
