@@ -1,20 +1,18 @@
-header{
+header {
     width: 100%;
     height: 60px;
-    /* background-color:red; */
     padding: 0 5%;
 
     display: flex;
-        justify-content: space-between;
-        align-items: center;
-    /* position: relative; */
-    background-image: url("../../../assets/image/headerBg.png") ;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("../../../assets/image/headerBg.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.navbar-titles{
+.navbar-titles {
     height: 100%;
     display: flex;
     align-items: center;
@@ -23,96 +21,78 @@ header{
     cursor: pointer;
 }
 
-
-.Kukakcorp {
-    position: relative;
-    height: 100%;    
-    display:flex;
-        align-items:center;
-}
-.Kukakcorp h2 {
+.navbar-titles h2 {
     font-family: 'Montserrat', sans-serif;
 }
 
-.KukakorpMenu-container{
-    display:none; 
+
+.Kukakcorp {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.KukakorpMenu-container {
+    display: none;
     position: absolute;
-    bottom:-150%;
-    left:-10%;
+    bottom: -150%;
+    left: -10%;
     border-radius: 8px;
-    width:120px;
+    width: 120px;
     height: 90px;
     padding: 10px;
 
     z-index: 2;
 
-    background-color: rgba(255,255,255, 0.3);
+    background-color: rgba(255, 255, 255, 0.3);
 
 }
 
-.KukakorpMenu-container h2{
-    /* font-family: 'Montserrat', sans-serif; */
+.KukakorpMenu-container h2 {
+
     margin-bottom: 5%;
     border-bottom: 1px solid black;
 }
 
+.Kukakcorp:hover .KukakorpMenu-container {
+    display: block;
+}
+
+.KukaIntro {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.KukaIntro-Menu {
+    display: none;
+    position: absolute;
+    bottom: -330%;
+    left: -30%;
+    border-radius: 8px;
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.3);
+
+}
+
+.KukaIntro-Menu h2 {
+    margin-bottom: 3.5%;
+    border-bottom: 1px solid black;
+}
+
+.KukaIntro:hover .KukaIntro-Menu,
 .Kukakcorp:hover .KukakorpMenu-container{
     display: block;
 }
 
-.KukaIntro{
-    position: relative;
-    height: 100%;    
-    display:flex;
-        align-items:center;
-}
-
-.KukaIntro-Menu{
-    display:none; 
-    position: absolute;
-    bottom:-330%;
-    left:-30%;
-    border-radius: 8px;
-    width:300px;
-    height: 200px;
-    padding: 20px;
-    z-index: 2;
-    background-color: rgba(255,255,255, 0.3);
-    
-}
-
-.KukaIntro-Menu h2{
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom: 3.5%;
-    border-bottom: 1px solid black;
-    
-}
-
-.KukaIntro:hover .KukaIntro-Menu ,
-.Kukakcorp:hover .KukakorpMenu-container
-/* .KukaFAQS:hover,
-.KukaPuntosVenta:hover,
-.header-whatsapp:hover */
-{
-    display:block;
-}
-
-/* .KukaIntro:hover ,
-.Kukakcorp:hover, 
-.KukaFAQS:hover,
-.KukaPuntosVenta:hover,
-.header-whatsapp:hover{
-    border:1px solid;
-    border-radius: 15px;
-    padding: 10px;
-} */
-
-
-
-
 @media (max-width: 760px) {
-    .navbar-titles{
+    .navbar-titles {
         display: none;
     }
-    
+
 }
