@@ -140,9 +140,9 @@
 
 .MVC-detail-torquel{
     width: 90%;
-    border: solid 1px ;
+    /* border: solid 1px ; */
     border-radius: 5px;
-    height: 110%;
+    height: 60%;
     font-size: 1rem;
     display: grid;
         grid-template-rows: auto;
@@ -151,7 +151,7 @@
 .MVC-detail-torquel-container{
     /* height: 10%; */
     display: grid;
-        grid-template-columns: 1fr 1fr ;
+        grid-template-columns: 1fr 1fr 1fr ;
     border-bottom:  solid 1px;
     border-bottom:  solid 1px;
     padding-top: 10px ;

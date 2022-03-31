@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from 'react';
 import './styles.css'
 
 import Logo from '../../../assets/logos/MVCeye.png';
-import Nutri from '../../../assets/image/nutricionalinfo.png'
 import Nutri2 from '../../../assets/image/nutricionalinfo3.png'
 
 import hand from '../../../assets/image/hand.png'
@@ -71,10 +70,16 @@ export const MVC = () => {
                         </div>
                         <div className='MVC-detail-title'>
                             <h1>Información Nutricional</h1>
-                            {/* < img src={Nutri} /> */}
-                            < img src={Nutri2} className='MVC-detail-torquel-image'  />
+                            {/* < img src={Nutri2} className='MVC-detail-torquel-image'  /> */}
+
+
                             {/* < div  className='MVC-detail-torquel-image'> </div> */}
-                            {/* <div className='MVC-detail-torquel' >
+                            <div className='MVC-detail-torquel' >
+                                <div className='MVC-detail-torquel-container'>
+                                    <div></div>
+                                    <div></div>
+                                    <div>% Valor Diario</div>
+                                </div>
                                 <div className='MVC-detail-torquel-container'>
                                     <div>Energía (Kcal)</div>
                                     <div>418 Kcal</div>
@@ -82,37 +87,45 @@ export const MVC = () => {
                                 <div className='MVC-detail-torquel-container'>
                                     <div>Grasa Total</div>
                                     <div>0g</div>
+                                    <div>0%</div>
                                 </div>
-                                    
+
                                 <div className='MVC-detail-torquel-container'>
                                     <div>Colesterol</div>
                                     <div>0g</div>
+                                    <div>0%</div>
                                 </div>
                                 <div className='MVC-detail-torquel-container'>
                                     <div>Sodio</div>
                                     <div>0g</div>
+                                    <div>0%</div>
                                 </div>
                                 <div className='MVC-detail-torquel-container'>
                                     <div>Carbohidratos Totales </div>
                                     <div>418g</div>
+                                    <div>152%</div>
                                 </div>
                                 <div className='MVC-detail-torquel-container'>
                                     <div>Fibra</div>
                                     <div>3g</div>
+                                    <div>11%</div>
                                 </div>
                                 <div className='MVC-detail-torquel-container'>
                                     <div>Proteína</div>
                                     <div>10g</div>
+                                    <div>20%</div>
                                 </div>
                                 <div className='MVC-detail-torquel-container'>
                                     <div>Calcio</div>
                                     <div>450mg</div>
+                                    <div>35%</div>
                                 </div>
                                 <div className='MVC-detail-torquel-container'>
                                     <div>Hierro</div>
                                     <div>3.43mg</div>
+                                    <div>20%</div>
                                 </div>
-                            </div> */}
+                            </div>
 
                             {/* <div className='MVC-detail-torquel'>
                                 <div>Energía (Kcal) </div>
