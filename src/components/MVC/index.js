@@ -126,28 +126,6 @@ export const MVC = () => {
                                     <div>20%</div>
                                 </div>
                             </div>
-
-                            {/* <div className='MVC-detail-torquel'>
-                                <div>Energía (Kcal) </div>
-                                <div>418 </div>
-                                <div>Grasa Total</div>
-                                <div>0g</div>
-                                <div>Colesterol </div>
-                                <div> 0g</div>
-                                <div>Sodio</div>
-                                <div>0g</div>
-                                <div>Carbohigratos Totales </div>
-                                <div>418g </div>
-                                <div>Fibra</div>
-                                <div>3g</div>
-                                <div>Proteína</div>
-                                <div>10g</div>
-                                <div>Calcio</div>
-                                <div>450mg</div>
-                                <div>Hierro</div>
-                                <div>3.43mg</div>
-                            </div> */}
-
                         </div>
                     </React.Fragment>
                 }
