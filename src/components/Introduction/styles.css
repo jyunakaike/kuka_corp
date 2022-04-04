@@ -22,17 +22,15 @@
     position: relative;
 }
 
-/* .Intro-button-container img {
-    border-radius: 50%;
-} */
-
 .Intro-button{
     /* width: 40%; */
     
 }
 .Intro-button :hover{
-    width: 120%;
-    border-radius: 50%;
+    transform: scale(1.3);
+    /* width: 120%;
+    border-radius: 50%; */
+    transition: 0.5s;
 }
 
 .Intro-button img{
@@ -342,10 +340,11 @@
         width: 40%;
         border-radius: 50%;
     }
-    .Intro-button :hover{
+    /* .Intro-button :hover{
         width: 60%;
         border-radius: 0%;
-    }
+        
+    } */
 
     /* .Intro-button-container img:hover {
         width: 60%;

@@ -215,25 +215,6 @@ export const Introduction = () => {
             }, 30);
         }
     }
-
-    // useEffect(() => {
-    //     // ese code lo hace para que recorra
-    //     // intervaloslideshow.current = setInterval(() => {
-    //     //     next();
-    //     // }, 5000);
-
-    //     // slideshow.current.addEventListener('mouseenter', () => {
-    //     //     clearInterval(intervaloslideshow.current);
-    //     // });
-
-    //     // resume 
-    //     // slideshow.current.addEventListener('mouseleave', () => {
-    //     //     intervaloslideshow.current = setInterval(() => {
-    //     //         next();
-    //     //     }, 7000);
-    //     // });
-    // }, [])
-
     return (
         <div className="Introduction-allContainer">
 

@@ -25,14 +25,11 @@
 }
 
 .FAQS-grid:hover{
-    border-radius: 15px;
-    width: 110%;
-    height: 110%;
+    transform: scale(1.1);
+    transition: 0.5s;
+    /* width: 110%;
+    height: 110%; */
     background-color: #ea9a4a;
-    display: flex;
-        justify-content: center;
-        align-items: center;
-    padding: 10px;
     animation-duration: 1s;
     animation-name: fadeIn ;
     color: white;
