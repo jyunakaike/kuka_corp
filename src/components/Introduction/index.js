@@ -219,7 +219,7 @@ export const Introduction = () => {
         <div className="Introduction-allContainer">
 
             <div className='Introduction-container' ref={slideshow}>
-                <Parallax bgImageStyle={{ height: '100%', width: '100%', minWidth: '100px' }} className='Introduction-container-bg1' bgImage={bg} strength={150}>
+                <Parallax bgImageStyle={{ height: '100%', width: '100%', minWidth: '100px' }} className='Introduction-container-bg1' bgImage={bg} strength={600}>
                 </Parallax>
 
                 <Parallax
