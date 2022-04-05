@@ -219,7 +219,7 @@ export const Introduction = () => {
         <div className="Introduction-allContainer">
 
             <div className='Introduction-container' ref={slideshow}>
-                <Parallax bgImageStyle={{ height: '100%', width: '100%', minWidth: '100px' }} className='Introduction-container-bg1' bgImage={bg} strength={600}>
+                <Parallax bgImageStyle={{ height: '110%', width: '100%', minWidth: '100px' }} className='Introduction-container-bg1' bgImage={bg} strength={600}>
                 </Parallax>
 
                 <Parallax
@@ -239,7 +239,7 @@ export const Introduction = () => {
                     bgImageStyle={{ height: '100%', width: '100%', minWidth: '410px' }}
                     className='Introduction-container-bg1'
                     bgImage={bg2}
-                    strength={150}
+                    strength={500}
                     contentClassName={'Intro-3000-container'}
                 >
                     <img className='Intro-3000-detail' src={Intro3k} />
@@ -249,7 +249,7 @@ export const Introduction = () => {
                     bgImageStyle={{ height: '100%', width: '100%', minWidth: '410px' }}
                     className='Introduction-container-bg1'
                     bgImage={bg2}
-                    strength={150}
+                    strength={500}
                     contentClassName={'Intro-3000-container'}
                 >
                     <img className='Intro-3000-detail' src={IntroAbuela} />
@@ -259,7 +259,7 @@ export const Introduction = () => {
                     bgImageStyle={{ height: '100%', width: '100%', minWidth: '410px' }}
                     className='Introduction-container-bg1'
                     bgImage={bg2}
-                    strength={150}
+                    strength={500}
                     contentClassName={'Intro-nutricion-container'}>
                     <img className='Intro-nutricion-detail' src={IntroNutricion} />
                 </Parallax>
@@ -268,7 +268,7 @@ export const Introduction = () => {
                     bgImageStyle={{ height: '100%', width: '100%', minWidth: '410px' }}
                     className='Introduction-container-bg1'
                     bgImage={bg2}
-                    strength={150}
+                    strength={500}
                     contentClassName={'Intro-3000-container'}
                 >
                     5
