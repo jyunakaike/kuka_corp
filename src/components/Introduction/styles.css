@@ -22,10 +22,10 @@
     position: relative;
 }
 
-.Intro-button{
-    /* width: 40%; */
+/* .Intro-button{
+        width: 40%;
     
-}
+} */
 .Intro-button :hover{
     transform: scale(1.3);
     /* width: 120%;
