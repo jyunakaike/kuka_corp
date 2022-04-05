@@ -9,7 +9,6 @@
       align-items: center;
       background: center;
       background-color: rgba(0,0,0,0.7);
-    /*  */
     display: flex;
         justify-content: center;
         align-items: center;
@@ -36,7 +35,6 @@
 .ModalContainer-Close{
     width: 30px;
     height: 30px;
-    /* background-color: aliceblue; */
     display: grid;
         place-items: center;
     font-size: 3rem;
@@ -54,8 +52,4 @@
         align-items: center;
         justify-content: center;
     border-radius: 30px;
-
-    /* border: solid 1px;
-    border-radius: 15px; */
-
 }

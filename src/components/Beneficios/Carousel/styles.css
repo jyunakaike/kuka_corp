@@ -1,14 +1,11 @@
 .Carousel-container{
     width: 100%;
     height: 100%;
-    /* background-color: aqua; */
     overflow: hidden;
 }
 
 .Carousel-slide{
     width: 100%;
-    /* height: 1500px; */
-    /* background-color: black; */
     display: flex;
     flex-wrap: nowrap;
     position: relative;
@@ -53,19 +50,9 @@
     background-repeat: no-repeat;
     background-size: cover ; 
 } */
-
-/* .Carousel-controles{
-    border: none;
-}
-
-.Carousel-controles:hover{
-} */
-
-
 .Carousel-arrow{
     width: 100px;
     height: 100px;
-    /* preguntar */
     color: green;
 }
 

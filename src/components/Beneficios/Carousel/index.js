@@ -87,14 +87,6 @@ export const Carousel = () => {
                 <img className='Carousel-img1' src={img1} alt="beneficio1" ></img>
                 <img className='Carousel-img2' src={img2} alt="beneficio1" ></img>
                 <img className='Carousel-img3' src={img3} alt="beneficio1" ></img>
-
-
-                {/* for parallax but no */}
-                {/* <div className='Carousel-img1' alt="beneficio1" ></div>
-                    <div className='Carousel-img2' alt="beneficio1" ></div>
-                    <div className='Carousel-img3' alt="beneficio1" ></div> */}
-
-                
             </div>
 
             <div className='Carousel-controles'>

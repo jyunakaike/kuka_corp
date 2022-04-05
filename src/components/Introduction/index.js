@@ -1,13 +1,15 @@
-import React, { useRef, useEffect } from 'react'
-import './styles.css'
+import React, { useRef, useEffect } from 'react';
+import './styles.css';
 
 import { Parallax } from 'react-parallax';
-import { IoIosArrowForward } from 'react-icons/io'
-import { IoIosArrowBack } from 'react-icons/io'
+import { IoIosArrowForward } from 'react-icons/io';
+import { IoIosArrowBack } from 'react-icons/io';
 
 
-import bg from '../../../assets/image/IntroBackground.png'
-import bg2 from '../../../assets/image/IntroBackgroundcarousel.jpg'
+// import bg from '../../../assets/image/IntroBackground.png'
+import bg from '../../../assets/image/IntroBackground.jpg';
+
+import bg2 from '../../../assets/image/IntroBackgroundcarousel.jpg';
 
 
 // buton
@@ -274,15 +276,7 @@ export const Introduction = () => {
                     5
                     <img className='Intro-3000-detail' src={IntroEspiritual} />
                 </Parallax>
-
-                {/* <Parallax bgImageStyle={{ height: '100%', width: '100%', minWidth: '410px' }} className='Introduction-container-bg1' bgImage={bg} strength={150}>
-                </Parallax> */}
-
             </div>
-
-
-            {/* <Parallax bgImageStyle={{ height: '100%', width: '100%', minWidth: '410px' }} className='Introduction-container' bgImage={bg} strength={150}>
-            </Parallax> */}
 
             <div className='Introduction-controles' id='controles' >
                 <button onClick={prev} className='Introduction-controles-izquierda'>

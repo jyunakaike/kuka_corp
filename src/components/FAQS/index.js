@@ -5,9 +5,9 @@ import { GridFAQS } from './GridFAQS';
 import initialState from '../../db/db.js'
 
 import { IoIosArrowUp } from 'react-icons/io'
+import { useMoveSection } from '../../hook/useMoveSection'
 
-import {useMoveSection} from '../../hook/useMoveSection'
-
+import ProductIcon from '../../../assets/image/faqProduct.png'
 
 export const FAQS = () => {
   const list = initialState.FAQList;
@@ -21,7 +21,6 @@ export const FAQS = () => {
     const observer = new window.IntersectionObserver((entries) => {
       const { isIntersecting } = entries[0]
 
-      // console.log(isIntersecting)
       if (isIntersecting) {
         setShow(true)
         observer.disconnect()
@@ -33,7 +32,6 @@ export const FAQS = () => {
   return (
     <section className='FAQS-container' id='FAQS'>
       <h1> FAQS</h1>
-
       <div ref={element} className='FAQS-grids' >
         {show &&
           list.map((array) =>
@@ -42,9 +40,19 @@ export const FAQS = () => {
         }
       </div>
       <div className='FAQS-pagination'>
-        {/* aqui hay una paginacion */}
+        aqui hay una paginacion
       </div>
-      <IoIosArrowUp onClick={()=> {useMoveSection(Nav)}} className='FAQS-arrowUp' />
+      <IoIosArrowUp onClick={() => { useMoveSection(Nav) }} className='FAQS-arrowUp' />
+
+      {/* bg product icon */}
+      <div className='FAQS-container-iconbg1'>
+        <img src={ProductIcon} className='FAQS-product1' alt='Product-left' />
+      </div>
+
+      <div className='FAQS-container-iconbg2'>
+        <img src={ProductIcon} className='FAQS-product2' alt='Product-right' />
+      </div>
+
     </section>
   )
 }

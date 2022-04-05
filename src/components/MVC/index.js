@@ -20,8 +20,6 @@ export const MVC = () => {
     useEffect(() => {
         const observer = new window.IntersectionObserver((entries) => {
             const { isIntersecting } = entries[0]
-
-            // console.log(isIntersecting)
             if (isIntersecting) {
                 setShow(true)
                 observer.disconnect()
@@ -70,10 +68,6 @@ export const MVC = () => {
                         </div>
                         <div className='MVC-detail-title'>
                             <h1>Información Nutricional</h1>
-                            {/* < img src={Nutri2} className='MVC-detail-torquel-image'  /> */}
-
-
-                            {/* < div  className='MVC-detail-torquel-image'> </div> */}
                             <div className='MVC-detail-torquel' >
                                 <div className='MVC-detail-torquel-container'>
                                     <div></div>

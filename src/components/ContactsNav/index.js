@@ -11,7 +11,6 @@ export const ContactsNav = ({ openModalQR }) => {
     <div className='ContactsNav'>
       <p><ImFacebook /></p>
       <a href='https://www.instagram.com/kukacorp/' target="_blank" ><p><RiInstagramFill /></p></a>
-      {/* <p><RiInstagramFill /></p> */}
       <p><IoLogoWhatsapp style={{ cursor: 'pointer' }} onClick={openModalQR} /></p>
     </div>
   )
