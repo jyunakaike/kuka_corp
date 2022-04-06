@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useState , useEffect } from 'react';
 import './styles.css';
 
 import { Parallax } from 'react-parallax';
@@ -32,6 +32,28 @@ import IntroEspiritual from '../../../assets/image/Introespiritual.png'
 
 export const Introduction = () => {
     const slideshow = useRef(null);
+    const [isVisible, setIsVisible] = useState(true);
+
+    useEffect(() => {
+        window.addEventListener("scroll", listenToScroll);
+        return () => {
+            window.removeEventListener("scroll",listenToScroll)
+        };
+    }, []);
+
+    const listenToScroll = () => {
+        let heightoHide = 70;
+        const winScroll= document.body.scrollTop || document.documentElement.scrollTop;
+        console.log(winScroll);
+        if(winScroll> heightoHide){
+            // isVisible
+            setIsVisible(false)
+        }
+        else{
+            setIsVisible(true);
+        }
+    }
+
     const next = () => {
         if (slideshow.current.children.length > 0) {
             // obtenenemos el primer elemento del slideshow
@@ -216,6 +238,8 @@ export const Introduction = () => {
         }
     }
 
+
+
     return (
         <div className="Introduction-allContainer">
 
@@ -227,7 +251,14 @@ export const Introduction = () => {
                     strength={600}
                     contentClassName={'Introduction-container-bg1-div'}
                 >
-                    <img className='Introduction-container-bg1-logo' src={nubes} alt='Nubes' />
+                    {
+                        (isVisible)
+                            ?
+                            <img className='Introduction-container-bg1-logo' src={nubes} alt='Nubes' />
+                            : 
+                            <img className='Introduction-container-bg1-logoOut' src={nubes} alt='Nubes' />
+                }
+
                     {/* <div className='Intro-button'> <img onClick={element0} src={button1} /> </div> */}
                 </Parallax>
 
