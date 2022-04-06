@@ -22,12 +22,15 @@
 
 .FAQS-grids {
     width: 60%;
-    height: 60%;
+    height: 80%;
+    /* min-height: 60%; */
+
     display: grid;
     place-items: center;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 30px;
     z-index: 2;
+    overflow:hidden
 }
 
 .FAQS-container h1 {
@@ -160,7 +163,7 @@
     }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 1000px) {
     .FAQS-container {
         height: auto;
     }
