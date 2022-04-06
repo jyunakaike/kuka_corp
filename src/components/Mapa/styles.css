@@ -24,20 +24,20 @@
 }
 
 .iconLocalization1{
-    top:0%;
-    right: 46%;
+    top:-6.9%;
+    right: 44.8%;
 }
 .iconLocalization2{
-    top:24%;
-    right: 48.6%;
+    top:21%;
+    right: 48.4%;
 }
 .iconLocalization3{
-    top:48%;
-    right: 64.5%;
+    top:47.5%;
+    right: 65.8%;
 }
 .iconLocalization4{
-    top:13%;
-    left: 36%;
+    top:9.5%;
+    left: 35.5%;
 }
 .iconLocalization1:hover,
 .iconLocalization2:hover,
@@ -106,7 +106,7 @@
 
     .Mapa-title{
         position: absolute;
-        top: -10%;
+        top: -15%;
         left: 10%;
         color: #00554a;
         text-align: center;
