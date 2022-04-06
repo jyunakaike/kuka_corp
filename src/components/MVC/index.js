@@ -66,7 +66,7 @@ export const MVC = () => {
                             <h1>INGREDIENTES</h1>
                             <p>EXTRACTO DE HOJA DE COCA ORGÁNICA.</p>
                         </div>
-                        <div className='MVC-detail-title'>
+                        <div className='MVC-detail-torquel-wrapper'>
                             <h1>Información Nutricional</h1>
                             <div className='MVC-detail-torquel' >
                                 <div className='MVC-detail-torquel-container'>

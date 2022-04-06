@@ -3,27 +3,28 @@
         filter: blur(5px);
         opacity: 0;
     }
-    to{
+
+    to {
         filter: blur(0);
         opacity: 1;
     }
 }
 
-.MVC-container-background{
+.MVC-container-background {
     position: relative;
     width: 100%;
     height: 110vh;
     margin: 0 auto;
-    background-image: url("../../../assets/image/middlepaper.jpg") ;
+    background-image: url("../../../assets/image/middlepaper.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.MVC-container-arrowDown{
+.MVC-container-arrowDown {
     position: absolute;
     top: -50px;
-    left : calc(50% - 50px);
+    left: calc(50% - 50px);
     width: 100px;
     height: 50px;
     color: #2aa60b;
@@ -31,45 +32,65 @@
 }
 
 
-.MVC-cards-container{
+.MVC-cards-container {
     width: 92%;
-    height: 55vh;
+    height: 50%;
     margin: 0 auto;
-    padding: 5% 10% 0 10%;
+    padding: 2% 10% 0 10%;
+    /* background-color: red; */
 
     display: grid;
-        grid-template-columns: 1fr 1fr 1fr ;
-        place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
 }
-.MVC-card{
-    width: 99.5%;
-    height: 100%;
+
+.MVC-card {
+    width: 100%;
+    height: 90%;
     min-height: 260px;
     border-radius: 15px;
-    padding:10px 10px ;
+    padding: 10px 10px;
     background-color: #00554a;
-    display:flex;
-        flex-direction: column;
-        align-items: center;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+
     animation-duration: 2s;
     animation-name: fadeIn;
     text-align: center;
+
+    /* overflow hidden */
+    /* overflow-x: hidden; 
+    overflow-y: hidden;  */
+
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }
-.MVC-card h1{
+
+.MVC-card::-webkit-scrollbar {
+    display: none;
+}
+
+
+.MVC-card h1 {
     margin: 10px 10px 15px 10px;
     color: white;
 }
 
-.MVC-card span{
+.MVC-card span {
     color: white;
-}
-.MVC-card p{
-    color: white;
-    font-family: 'Montserrat', sans-serif;
 }
 
-.MVC-card img{
+.MVC-card p {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+}
+
+.MVC-card img {
     margin: 10px;
     color: #2aa60b;
     font-family: 'Montserrat', sans-serif;
@@ -77,7 +98,7 @@
 
 
 
-.MVC-detail-container{
+.MVC-detail-container {
     width: 80%;
     height: 60vh;
     padding: 0% 10%;
@@ -85,9 +106,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     place-items: flex-start;
-    gap: 10px;
+    gap: 30px;
 }
-.MVC-detail-title{
+
+.MVC-detail-title {
     width: 100%;
     min-width: 20%;
     height: 82%;
@@ -97,50 +119,65 @@
     overflow: hidden;
     animation-duration: 2s;
     animation-name: fadeIn;
+    /* background-color: red; */
 }
 
-.MVC-detail-title h1{
+.MVC-detail-title h1 {
     margin-bottom: 10px;
     color: #00554a;
 }
 
-.MVC-detail-title p{
+.MVC-detail-title p {
     margin-bottom: 10px;
     color: #2aa60b;
     font-family: 'Montserrat', sans-serif;
 }
 
-.MVC-detail-torquel-image{
+.MVC-detail-torquel-wrapper {
+    width: 150%;
+    /* min-width: 40%; */
+    height: 82%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+    animation-duration: 2s;
+    animation-name: fadeIn;
+    /* background-color: blue; */
+}
+
+
+.MVC-detail-torquel-image {
     width: 100%;
     height: 70%;
 }
 
-.MVC-detail-torquel{
+.MVC-detail-torquel {
     width: 90%;
     border-radius: 5px;
     height: 60%;
     font-size: 1rem;
     display: grid;
-        grid-template-rows: auto;
+    grid-template-rows: auto;
 }
 
-.MVC-detail-torquel-container{
+.MVC-detail-torquel-container {
     display: grid;
-        grid-template-columns: 1fr 1fr 1fr ;
-    border-bottom:  solid 1px;
-    border-bottom:  solid 1px;
-    padding-top: 10px ;
-    padding-left: 10px ;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-bottom: solid 1px;
+    border-bottom: solid 1px;
+    padding-top: 1%;
+    padding-left: 10px;
     color: #00554a;
     font-weight: bold;
 }
 
-.MVC-detail-torquel-container:last-child{
+.MVC-detail-torquel-container:last-child {
     border-bottom: none;
 }
 
-.MVC-hand{
-    position:absolute;
+.MVC-hand {
+    position: absolute;
     bottom: 0;
     right: 0;
     width: 40%;
@@ -148,37 +185,38 @@
 
 
 @media (max-width: 1000px) {
-    .MVC-hand{
+    .MVC-hand {
         display: none;
     }
 
-    .MVC-container-arrowDown{
+    .MVC-container-arrowDown {
         top: -70px;
     }
-   
-    .MVC-container-background{
+
+    .MVC-container-background {
         position: relative;
         width: 100%;
         height: auto;
         margin: 0 auto;
-        background-image: url("../../../assets/image/middlepaper.jpg") ;
+        background-image: url("../../../assets/image/middlepaper.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
     }
-   
-    .MVC-cards-container{
+
+    .MVC-cards-container {
         width: 100%;
         height: 100%;
         margin: 10% auto;
         padding: 0% 10% 0 10%;
-    
+
         display: grid;
-            grid-template-columns: 1fr  ;
-            place-items: center;
-            gap: 10px;
+        grid-template-columns: 1fr;
+        place-items: center;
+        gap: 10px;
     }
-    .MVC-card{
+
+    .MVC-card {
         width: 100%;
         min-width: 10%;
         height: auto;
@@ -193,55 +231,61 @@
         animation-name: fadeIn;
         font-size: 1rem;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-        
+
     }
 
-    .MVC-card h1{
+    .MVC-card h1 {
         margin: 2px;
         color: white;
-    
     }
-       
-    .MVC-card img, .MVC-card p{
+
+    .MVC-card img,
+    .MVC-card p {
         margin: 2px;
         color: white;
         font-family: 'Montserrat', sans-serif;
     }
 
-    .MVC-detail-container{
+    .MVC-detail-container {
         width: 100%;
         height: auto;
         padding: 1% 10%;
         margin: 0 auto;
         display: grid;
-            grid-template-columns: 1fr ;
-            place-items: center;
-            gap: 0;
+        grid-template-columns: 1fr;
+        place-items: center;
+        gap: 0;
     }
-    .MVC-detail-title{
+
+    .MVC-detail-title {
         width: 100%;
         min-width: 20%;
         height: auto;
-        display:flex;
-            flex-direction: column;
-            align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
         overflow: hidden;
         animation-duration: 2s;
         animation-name: fadeIn;
     }
 
-    .MVC-detail-title h1{
+    .MVC-detail-title h1 {
         margin-bottom: 10px;
         color: #00554a;
     }
-    
-    .MVC-detail-title p{
+
+    .MVC-detail-title p {
         margin-bottom: 10px;
         color: #2aa60b;
         font-family: 'Montserrat', sans-serif;
     }
 
-    .MVC-detail-title img{
+    .MVC-detail-title img {
         margin-bottom: 30px;
     }
+    .MVC-detail-torquel-wrapper{
+        width: 100%;
+        height: auto;
+    }
+
 }
