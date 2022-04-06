@@ -40,7 +40,6 @@ export const FAQS = () => {
         }
       </div>
       <div className='FAQS-pagination'>
-        aqui hay una paginacion
       </div>
       <IoIosArrowUp onClick={() => { useMoveSection(Nav) }} className='FAQS-arrowUp' />
 

@@ -8,8 +8,10 @@ import { IoIosArrowBack } from 'react-icons/io';
 
 // import bg from '../../../assets/image/IntroBackground.png'
 import bg from '../../../assets/image/IntroBackground.jpg';
-
 import bg2 from '../../../assets/image/IntroBackgroundcarousel.jpg';
+
+import nubes from '../../../assets/image/IntroBackgroundNubes.png'
+
 
 
 // buton
@@ -20,7 +22,7 @@ import button4 from '../../../assets/logos/espiritualidad.jpg';
 
 // Logo
 import Logo1 from '../../../assets/logos/3000logo.png';
-
+import kukalogo from '../../../assets/logos/kuka.png';
 
 // detail
 import Intro3k from '../../../assets/image/Intro3000.png'
@@ -28,11 +30,8 @@ import IntroAbuela from '../../../assets/image/abuelacoca.png'
 import IntroNutricion from '../../../assets/image/Intronutricion.png'
 import IntroEspiritual from '../../../assets/image/Introespiritual.png'
 
-
 export const Introduction = () => {
     const slideshow = useRef(null);
-
-
     const next = () => {
         if (slideshow.current.children.length > 0) {
             // obtenenemos el primer elemento del slideshow
@@ -88,7 +87,6 @@ export const Introduction = () => {
         }
     }
 
-
     const element1 = () => {
         if (slideshow.current.children.length > 0) {
             // obtenenemos el primer elemento del slideshow
@@ -123,6 +121,7 @@ export const Introduction = () => {
             slideshow.current.addEventListener('transitionend', transition);
         }
     }
+
     const element2 = () => {
         if (slideshow.current.children.length > 0) {
             // obtenenemos el primer elemento del slideshow
@@ -195,7 +194,6 @@ export const Introduction = () => {
         }
     }
 
-
     const prev = () => {
         // console.log('anterior');
         // para regresar al ultimo elemento semanda del ultimo al primero 
@@ -217,11 +215,20 @@ export const Introduction = () => {
             }, 30);
         }
     }
+
     return (
         <div className="Introduction-allContainer">
 
             <div className='Introduction-container' ref={slideshow}>
-                <Parallax bgImageStyle={{ height: '110%', width: '100%', minWidth: '100px' }} className='Introduction-container-bg1' bgImage={bg} strength={600}>
+                <Parallax
+                    bgImageStyle={{ height: '110%', width: '100%', minWidth: '100px' }}
+                    className='Introduction-container-bg1'
+                    bgImage={bg}
+                    strength={600}
+                    contentClassName={'Introduction-container-bg1-div'}
+                >
+                    <img className='Introduction-container-bg1-logo' src={nubes} alt='Nubes' />
+                    {/* <div className='Intro-button'> <img onClick={element0} src={button1} /> </div> */}
                 </Parallax>
 
                 <Parallax
@@ -290,31 +297,5 @@ export const Introduction = () => {
             <div className='Introduction-image' > </div>
 
         </div>
-
-
-        // {/* <div>aola</div> */}
-        // <Parallax bgImageStyle={{height: '100%', width: '100%', minWidth:'1000px'}}  className='Introduction-container' bgImage={image2} strength={150}>
-        // </Parallax>
-
-
-        // , maxWidth: '75px', opacity: '.5'
-
-        // </Parallax>
-        // <section className='Introduction-container'>
-        //     {/* <img className='Introduction-image' src={require(`../../../assets/image/bg.jpg`)} /> */}
-
-        //     {/* parallax clavado */}
-        //     {/* <img className='Introduction-image' style={{backgroundImage:`url(${bg})` }} /> */}
-
-        //     {/* <Parallax className='Introduction-image' bgImage={bg} bgImageAlt="bg" strength={-120}>
-
-        //     </Parallax> */}
-
-        //     {/* <Parallax className='Introduction-image' strength={-120}>
-        //         <Background className='Introduction-image' >
-        //             <img className='Introduction-image' src={require(`../../../assets/image/bg.jpg`)} />
-        //         </Background>
-        //     </Parallax> */}
-        // </section>
     )
 }

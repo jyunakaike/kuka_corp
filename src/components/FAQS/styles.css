@@ -72,19 +72,37 @@
     width: 45%;
     position: absolute;
     left: 40%;
-    top: 39%;
+    top: 37%;
     transform: rotate(-20deg);
+    animation: animate1 1.5s alternate infinite;
+}
+@keyframes animate1 {
+    from{
+        transform: rotate(-20deg);
+    }
+    to{
+        transform: rotate(-40deg);
+    }
+    
 }
 
 .FAQS-product2 {
     width: 45%;
     position: absolute;
     right: 15%;
-    top: 40%;
+    top: 39%;
     transform: rotate(20deg);
+    animation: animate2 1.5s alternate infinite;
 }
 
-
+@keyframes animate2 {
+    from{
+        transform: rotate(20deg);
+    }
+    to{
+        transform: rotate(40deg);
+    }
+}
 
 @media (max-width: 760px) {
     .FAQS-container {
