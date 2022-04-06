@@ -35,13 +35,13 @@ export const FAQS = () => {
   // for wavyText
   useEffect(() => {
     const wavyText = document.querySelector('.FAQS-arrowUp-wavy-text');
-    wavyText.innerHTML= wavyText.textContent.replace(/\S/g, "<span>$&</span>");
+    wavyText.innerHTML = wavyText.textContent.replace(/\S/g, "<span>$&</span>");
     // console.log(wavyText)
-  
 
-    const wavyElement= document.querySelectorAll('span');
-    for(let i=0 ; i< wavyElement.length;i++){
-      wavyElement[i].style.animationDelay = i *0.05+'s';
+
+    const wavyElement = document.querySelectorAll('span');
+    for (let i = 0; i < wavyElement.length; i++) {
+      wavyElement[i].style.animationDelay = i * 0.05 + 's';
     }
   }, []);
 
@@ -54,13 +54,21 @@ export const FAQS = () => {
             <GridFAQS key={array.id} id={array.id} question={array.pregunta} answer={array.respuesta} ></GridFAQS>
           )
         }
+        <div></div>
+        <div className='FAQS-grids-arrow'>
+          <IoIosArrowUp onClick={() => { useMoveSection(Nav) }} className='FAQS-arrowUp' />
+          <div className='FAQS-arrowUp-wavy'>
+            <p className='FAQS-arrowUp-wavy-text' >Volver&nbsp;Arriba </p>
+          </div>
+        </div>
+        <div></div>
       </div>
       <div className='FAQS-pagination'>
       </div>
-      <IoIosArrowUp onClick={() => { useMoveSection(Nav) }} className='FAQS-arrowUp' />
+      {/* <IoIosArrowUp onClick={() => { useMoveSection(Nav) }} className='FAQS-arrowUp' />
       <div className='FAQS-arrowUp-wavy'>
         <p className='FAQS-arrowUp-wavy-text' >Volver&nbsp;Arriba </p>
-      </div>
+      </div> */}
 
       {/* bg product icon */}
       <div className='FAQS-container-iconbg1'>
