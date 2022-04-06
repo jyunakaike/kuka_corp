@@ -46,14 +46,16 @@ header {
     z-index: 2;
 
     background-color: rgba(255, 255, 255, 0.3);
-
 }
 
 .KukakorpMenu-container h2 {
-
     margin-bottom: 5%;
     border-bottom: 1px solid black;
 }
+.KukakorpMenu-container h2:hover {
+    color: white;
+}
+
 
 .Kukakcorp:hover .KukakorpMenu-container {
     display: block;
@@ -83,6 +85,11 @@ header {
 .KukaIntro-Menu h2 {
     margin-bottom: 3.5%;
     border-bottom: 1px solid black;
+}
+
+.KukaIntro-Menu h2:hover {
+    color: white;
+
 }
 
 .KukaIntro:hover .KukaIntro-Menu,

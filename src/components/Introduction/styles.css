@@ -203,6 +203,12 @@
     border-radius: 50%;
 }
 
+.Introduction-controles-derecha:hover,
+.Introduction-controles-izquierda:hover{
+    background-color: gray;
+    opacity: 0.5;
+}
+
 .Introduction-image {
     position: absolute;
     bottom: 0;

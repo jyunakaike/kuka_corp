@@ -53,3 +53,8 @@
         justify-content: center;
     border-radius: 30px;
 }
+
+.ModalContainer-element h2 {
+    margin-bottom: 1rem;
+
+}

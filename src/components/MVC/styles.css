@@ -29,7 +29,37 @@
     height: 50px;
     color: #2aa60b;
     z-index: 2;
+    animation: scale1 0.5s ease;
 }
+
+@keyframes scale1 {
+    from{
+        transform: scale(2.0);
+    }
+    to{
+        transform: scale(1.0);
+    }
+}
+
+.MVC-container-arrowDown:hover {
+    transform: scale(2.0);
+    animation: scale 0.5s ease;
+}
+
+@keyframes scale {
+    from {
+        transform: scale(1.0);
+    }
+
+    to {
+        transform: scale(2.0);
+    }
+
+}
+
+
+
+
 
 
 .MVC-cards-container {
@@ -286,7 +316,8 @@
     .MVC-detail-title img {
         margin-bottom: 30px;
     }
-    .MVC-detail-torquel-wrapper{
+
+    .MVC-detail-torquel-wrapper {
         width: 100%;
         height: auto;
     }
