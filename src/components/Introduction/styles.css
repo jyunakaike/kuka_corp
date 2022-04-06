@@ -56,7 +56,7 @@
     opacity: 1;
     animation: 
         fadein ease 0.5s,
-        animate 2.5s alternate infinite;
+        animate 2.5s  alternate infinite;
     transition: 2.5s;
 }
 

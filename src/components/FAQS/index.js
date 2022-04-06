@@ -15,7 +15,9 @@ export const FAQS = () => {
   const element = useRef(null)
   const [show, setShow] = useState()
 
-  const Nav = "Nav"
+  const Nav = "Nav";
+
+
 
   useEffect(() => {
     const observer = new window.IntersectionObserver((entries) => {
@@ -28,6 +30,20 @@ export const FAQS = () => {
     })
     observer.observe(element.current)
   }, [element])
+
+
+  // for wavyText
+  useEffect(() => {
+    const wavyText = document.querySelector('.FAQS-arrowUp-wavy-text');
+    wavyText.innerHTML= wavyText.textContent.replace(/\S/g, "<span>$&</span>");
+    // console.log(wavyText)
+  
+
+    const wavyElement= document.querySelectorAll('span');
+    for(let i=0 ; i< wavyElement.length;i++){
+      wavyElement[i].style.animationDelay = i *0.05+'s';
+    }
+  }, []);
 
   return (
     <section className='FAQS-container' id='FAQS'>
@@ -42,6 +58,9 @@ export const FAQS = () => {
       <div className='FAQS-pagination'>
       </div>
       <IoIosArrowUp onClick={() => { useMoveSection(Nav) }} className='FAQS-arrowUp' />
+      <div className='FAQS-arrowUp-wavy'>
+        <p className='FAQS-arrowUp-wavy-text' >Volver&nbsp;Arriba </p>
+      </div>
 
       {/* bg product icon */}
       <div className='FAQS-container-iconbg1'>

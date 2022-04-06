@@ -34,11 +34,39 @@
     color: #00554a;
 }
 
+/* faqs arrowUP */
+
 .FAQS-arrowUp {
     width: 115px;
     height: 70px;
     color: #2aa60b;
     z-index: 3;
+}
+/* faqs arrowUP animation */
+.FAQS-arrowUp-wavy{
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+}
+
+.FAQS-arrowUp-wavy span{
+    position: relative;
+    display: inline-block;
+    color: green;
+    animation: jump 1s ease-in-out infinite;
+    font-weight: bold;
+}
+@keyframes jump {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+     
 }
 
 .FAQS-container-iconbg1 {

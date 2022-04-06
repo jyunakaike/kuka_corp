@@ -44,7 +44,7 @@ export const Introduction = () => {
     const listenToScroll = () => {
         let heightoHide = 70;
         const winScroll= document.body.scrollTop || document.documentElement.scrollTop;
-        console.log(winScroll);
+        // console.log(winScroll);
         if(winScroll> heightoHide){
             // isVisible
             setIsVisible(false)
