@@ -138,10 +138,10 @@
 }
 
 .FAQS-product1 {
-    width: 45%;
+    width: 55%;
     position: absolute;
-    left: 40%;
-    top: 37%;
+    left: 30%;
+    top: 35%;
     transform: rotate(-20deg);
     animation: animate1 1.5s alternate infinite;
 }
@@ -152,14 +152,13 @@
     to{
         transform: rotate(-40deg);
     }
-    
 }
 
 .FAQS-product2 {
-    width: 45%;
+    width: 55%;
     position: absolute;
-    right: 15%;
-    top: 39%;
+    right: 12%;
+    top: 35%;
     transform: rotate(20deg);
     animation: animate2 1.5s alternate infinite;
 }
