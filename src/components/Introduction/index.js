@@ -5,24 +5,16 @@ import { Parallax } from 'react-parallax';
 import { IoIosArrowForward } from 'react-icons/io';
 import { IoIosArrowBack } from 'react-icons/io';
 
-
-// import bg from '../../../assets/image/IntroBackground.png'
 import bg from '../../../assets/image/IntroBackground.jpg';
 import bg2 from '../../../assets/image/IntroBackgroundcarousel.jpg';
 
 import nubes from '../../../assets/image/IntroBackgroundNubes.png'
-
-
 
 // buton
 import button1 from '../../../assets/logos/3000botom.jpg';
 import button2 from '../../../assets/logos/abuelacoca.jpg';
 import button3 from '../../../assets/logos/nutrientes.jpg';
 import button4 from '../../../assets/logos/espiritualidad.jpg';
-
-// Logo
-import Logo1 from '../../../assets/logos/3000logo.png';
-import kukalogo from '../../../assets/logos/kuka.png';
 
 // detail
 import Intro3k from '../../../assets/image/Intro3000.png'
@@ -44,9 +36,7 @@ export const Introduction = () => {
     const listenToScroll = () => {
         let heightoHide = 70;
         const winScroll= document.body.scrollTop || document.documentElement.scrollTop;
-        // console.log(winScroll);
         if(winScroll> heightoHide){
-            // isVisible
             setIsVisible(false)
         }
         else{
@@ -269,10 +259,10 @@ export const Introduction = () => {
                     strength={150}
                     contentClassName={'Intro-button-container'}
                 >
-                    <div className='Intro-button'> <img onClick={element0} src={button1} /> </div>
-                    <div className='Intro-button'> <img onClick={element1} src={button2} /> </div>
-                    <div className='Intro-button'> <img onClick={element2} src={button3} /></div>
-                    <div className='Intro-button'> <img onClick={element3} src={button4} /> </div>
+                    <div className='Intro-button'> <img onClick={element0} src={button1} alt='3000M.S.N.M'/> </div>
+                    <div className='Intro-button'> <img onClick={element1} src={button2} alt='abuela-Coca'/> </div>
+                    <div className='Intro-button'> <img onClick={element2} src={button3} alt='Nutrientes'/></div>
+                    <div className='Intro-button'> <img onClick={element3} src={button4} alt='Espiritualidad'/> </div>
                 </Parallax>
 
                 <Parallax
@@ -282,7 +272,7 @@ export const Introduction = () => {
                     strength={500}
                     contentClassName={'Intro-3000-container'}
                 >
-                    <img className='Intro-3000-detail' src={Intro3k} />
+                    <img className='Intro-3000-detail' src={Intro3k} alt='Detail3000M.S.N.M.' />
                 </Parallax>
 
                 <Parallax
@@ -292,7 +282,7 @@ export const Introduction = () => {
                     strength={500}
                     contentClassName={'Intro-3000-container'}
                 >
-                    <img className='Intro-3000-detail' src={IntroAbuela} />
+                    <img className='Intro-3000-detail' src={IntroAbuela} alt='DetailAbuelaCoca' />
                 </Parallax>
 
                 <Parallax
@@ -301,7 +291,7 @@ export const Introduction = () => {
                     bgImage={bg2}
                     strength={500}
                     contentClassName={'Intro-nutricion-container'}>
-                    <img className='Intro-nutricion-detail' src={IntroNutricion} />
+                    <img className='Intro-nutricion-detail' src={IntroNutricion} alt='DetailNutrientes' />
                 </Parallax>
 
                 <Parallax
@@ -311,8 +301,7 @@ export const Introduction = () => {
                     strength={500}
                     contentClassName={'Intro-3000-container'}
                 >
-                    5
-                    <img className='Intro-3000-detail' src={IntroEspiritual} />
+                    <img className='Intro-3000-detail' src={IntroEspiritual}  alt='DetailEspiritualidad'  />
                 </Parallax>
             </div>
 

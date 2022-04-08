@@ -33,8 +33,6 @@ const App = () => {
           (openModal) && <ModalContainer setOpenModal={setOpenModal} />
         }
 
-
-
     </React.Fragment>
 
   )

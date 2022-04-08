@@ -85,8 +85,8 @@ export const Carousel = () => {
         <div className='Carousel-container' >
             <div className='Carousel-slide' ref={slideshow}>
                 <img className='Carousel-img1' src={img1} alt="beneficio1" ></img>
-                <img className='Carousel-img2' src={img2} alt="beneficio1" ></img>
-                <img className='Carousel-img3' src={img3} alt="beneficio1" ></img>
+                <img className='Carousel-img2' src={img2} alt="beneficio2" ></img>
+                <img className='Carousel-img3' src={img3} alt="beneficio3" ></img>
             </div>
 
             <div className='Carousel-controles'>
