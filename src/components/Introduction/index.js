@@ -244,9 +244,9 @@ export const Introduction = () => {
                     {
                         (isVisible)
                             ?
-                            <img className='Introduction-container-bg1-logo' src={nubes} alt='Nubes' />
+                            <img className='Introduction-container-bg1-logo' src={nubes} alt={'Nubes'} />
                             : 
-                            <img className='Introduction-container-bg1-logoOut' src={nubes} alt='Nubes' />
+                            <img className='Introduction-container-bg1-logoOut' src={nubes} alt={'Nubes'} />
                 }
 
                     {/* <div className='Intro-button'> <img onClick={element0} src={button1} /> </div> */}
@@ -259,10 +259,10 @@ export const Introduction = () => {
                     strength={150}
                     contentClassName={'Intro-button-container'}
                 >
-                    <div className='Intro-button'> <img onClick={element0} src={button1} alt='3000M.S.N.M'/> </div>
-                    <div className='Intro-button'> <img onClick={element1} src={button2} alt='abuela-Coca'/> </div>
-                    <div className='Intro-button'> <img onClick={element2} src={button3} alt='Nutrientes'/></div>
-                    <div className='Intro-button'> <img onClick={element3} src={button4} alt='Espiritualidad'/> </div>
+                    <div className='Intro-button'> <img onClick={element0} src={button1} alt={'3000M.S.N.M'}/> </div>
+                    <div className='Intro-button'> <img onClick={element1} src={button2} alt={'abuela-Coca'}/> </div>
+                    <div className='Intro-button'> <img onClick={element2} src={button3} alt={'Nutrientes'}/></div>
+                    <div className='Intro-button'> <img onClick={element3} src={button4} alt={'Espiritualidad'}/> </div>
                 </Parallax>
 
                 <Parallax
@@ -272,7 +272,7 @@ export const Introduction = () => {
                     strength={500}
                     contentClassName={'Intro-3000-container'}
                 >
-                    <img className='Intro-3000-detail' src={Intro3k} alt='Detail3000M.S.N.M.' />
+                    <img className='Intro-3000-detail' src={Intro3k} alt={'Detail3000M.S.N.M.'} />
                 </Parallax>
 
                 <Parallax
@@ -282,7 +282,7 @@ export const Introduction = () => {
                     strength={500}
                     contentClassName={'Intro-3000-container'}
                 >
-                    <img className='Intro-3000-detail' src={IntroAbuela} alt='DetailAbuelaCoca' />
+                    <img className='Intro-3000-detail' src={IntroAbuela} alt={'DetailAbuelaCoca'} />
                 </Parallax>
 
                 <Parallax
@@ -291,7 +291,7 @@ export const Introduction = () => {
                     bgImage={bg2}
                     strength={500}
                     contentClassName={'Intro-nutricion-container'}>
-                    <img className='Intro-nutricion-detail' src={IntroNutricion} alt='DetailNutrientes' />
+                    <img className='Intro-nutricion-detail' src={IntroNutricion} alt={'DetailNutrientes'} />
                 </Parallax>
 
                 <Parallax
@@ -301,7 +301,7 @@ export const Introduction = () => {
                     strength={500}
                     contentClassName={'Intro-3000-container'}
                 >
-                    <img className='Intro-3000-detail' src={IntroEspiritual}  alt='DetailEspiritualidad'  />
+                    <img className='Intro-3000-detail' src={IntroEspiritual}  alt={'DetailEspiritualidad'}  />
                 </Parallax>
             </div>
 

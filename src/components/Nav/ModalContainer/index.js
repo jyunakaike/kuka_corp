@@ -25,7 +25,7 @@ export const ModalContainer = ({ setOpenModal }) => {
                     </div>
                     <div className='ModalContainer-element'>
                         <h2>CHAT WHATSAPP</h2>
-                        <img src={Qr} alt='Whatsapp-Qr'></img>
+                        <img src={Qr} alt={'Whatsapp-Qr'}></img>
                     </div>
                 </div>
             </div>

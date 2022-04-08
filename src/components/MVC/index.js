@@ -36,18 +36,18 @@ export const MVC = () => {
                     show &&
                     <React.Fragment>
                         <div className='MVC-card'>
-                            <img src={Logo} alt='LogoMVC'></img>
+                            <img src={Logo} alt={'LogoMVC'}></img>
                             <h1>MISIÓN</h1>
                             <p>Nuestra misión es perdurar el uso de la hoja de coca ofreciéndola en una presentación innovadora, higiénica y práctica</p>
                         </div>
                         <div className='MVC-card'>
-                            <img src={Logo} alt='LogoMVC'></img>
+                            <img src={Logo} alt={'LogoMVC'}></img>
                             <h1>VISIÓN</h1>
                             <p>Kukacorp es una empresa líder comprometida con la elaboración de productos que contribuyan a la consolidación de una sociedad donde se promueva la integración, se celebre la diversidad y se compartan los valores de la tierra.
                             </p>
                         </div>
                         <div className='MVC-card'>
-                            <img src={Logo} alt='LogoMVC'></img>
+                            <img src={Logo} alt={'LogoMVC'}></img>
                             <h1>CONTACTO</h1>
                             <p><span>Kukacorp S.R.L. <br /></span> 67983109</p>
                         </div>
@@ -124,7 +124,7 @@ export const MVC = () => {
                 }
             </div>
 
-            <img className='MVC-hand' src={hand} alt='hand' />
+            <img className='MVC-hand' src={hand} alt={'hand'} />
         </div>
     )
 }

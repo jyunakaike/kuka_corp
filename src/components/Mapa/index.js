@@ -47,10 +47,10 @@ export const Mapa = () => {
 
       {/* localization */}
 
-      <img src={Locali2} id='icon1' onClick={() => mouseIn(1)} className='Mapa-localization iconLocalization1' alt='Icon1'/>
-      <img src={Locali1} id='icon2' onClick={() => mouseIn(2)} className='Mapa-localization iconLocalization2' alt='Icon2'/>
-      <img src={Locali1} id='icon3' onClick={() => mouseIn(3)} className='Mapa-localization iconLocalization3' alt='Icon3'/>
-      <img src={Locali2} id='icon4' onClick={() => mouseIn(4)} className='Mapa-localization iconLocalization4' alt='Icon4'/>
+      <img src={Locali2} id='icon1' onClick={() => mouseIn(1)} className='Mapa-localization iconLocalization1' alt={'Icon1'}/>
+      <img src={Locali1} id='icon2' onClick={() => mouseIn(2)} className='Mapa-localization iconLocalization2' alt={'Icon2'}/>
+      <img src={Locali1} id='icon3' onClick={() => mouseIn(3)} className='Mapa-localization iconLocalization3' alt={'Icon3'}/>
+      <img src={Locali2} id='icon4' onClick={() => mouseIn(4)} className='Mapa-localization iconLocalization4' alt={'Icon4'}/>
       {/* <div id='icon5' onClick={() => mouseIn(5)} className='Mapa-localization iconLocalization5'></div>
       <div id='icon6' onClick={() => mouseIn(6)} className='Mapa-localization iconLocalization6'></div> */}
 

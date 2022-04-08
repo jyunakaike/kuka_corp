@@ -72,11 +72,11 @@ export const FAQS = () => {
 
       {/* bg product icon */}
       <div className='FAQS-container-iconbg1'>
-        <img src={ProductIcon} className='FAQS-product1' alt='Product-left' />
+        <img src={ProductIcon} className='FAQS-product1' alt={'Product-left'} />
       </div>
 
       <div className='FAQS-container-iconbg2'>
-        <img src={ProductIcon} className='FAQS-product2' alt='Product-right' />
+        <img src={ProductIcon} className='FAQS-product2' alt={'Product-right'} />
       </div>
 
     </section>

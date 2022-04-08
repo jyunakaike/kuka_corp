@@ -15,7 +15,7 @@ export const Nav = ({ openModalQR }) => {
   return (
     <React.Fragment>
       <header id='Nav' >
-        <img src={Logo} alt='Logo Kuka'></img>
+        <img src={Logo} alt={'Logo Kuka'}></img>
 
         <div className='navbar-titles'>
           <div className='Kukakcorp'>
